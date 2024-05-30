@@ -1,0 +1,70 @@
+/* App.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.animate-in {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.fadeAnimate {
+  z-index: inherit;
+  animation: fadeInOut 1s infinite alternate;
+}
+
+.typed-text {
+  color: #d2b94b;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 20%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+.blink.typing {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: var(--navbar-padding, 0.5rem /* 8px */);
+  min-height: 4rem /* 64px */;
+  width: 100%;
+}
+:where(.navbar > *) {
+  display: inline-flex;
+  align-items: center;
+}
+
+.navbar-start {
+  width: 50%;
+  justify-content: flex-start;
+}
+
+.navbar-center {
+  flex-shrink: 0;
+}
+
+.navbar-end {
+  width: 50%;
+  justify-content: flex-end;
+}
