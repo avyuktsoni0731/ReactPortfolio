@@ -1,18 +1,6 @@
-// import Image from "next/image";
-import Main from "./components/Main";
-import Navbar from "./components/Navbar";
-import CursorGlow from "./components/CursorGlow";
-import HamburgerMenu from "./components/HamburgerMenu";
-import "./static/App.css";
-
-export default function Home() {
+const HamburgerMenu = () => {
   return (
     <>
-      <CursorGlow />
-      <Navbar />
-      {/* <HamburgerMenu /> */}
-      <Main />
-      {/*       
       <div className="drawer-side">
         <label for="my-drawer-3" class="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto flex flex-col justify-between w-80 bg-black/40">
@@ -67,7 +55,9 @@ export default function Home() {
             </li>
           </ul>
         </ul>
-      </div> */}
+      </div>
     </>
   );
-}
+};
+
+export default HamburgerMenu;

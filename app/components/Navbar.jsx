@@ -1,7 +1,8 @@
 import React from "react";
-import Iconify from "@iconify/react";
+import Iconify, { Icon } from "@iconify/react";
 import Image from "next/image";
 import "../static/App.css";
+import { color } from "framer-motion";
 
 const Navbar = () => {
   return (
@@ -36,7 +37,7 @@ const Navbar = () => {
 
         <div className="navbar-start md:hidden"></div>
         <div className="navbar-center"></div>
-        {/* 
+
         <div className="navbar-end hidden md:flex md:flex-row list-none opacity-100">
           <li>
             <a
@@ -44,11 +45,12 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer" // Added for accessibility
             >
-              <Iconify
-                className="mx-3 opacity-50 hover:opacity-90 transition duration-200"
+              <Icon
+                className="mx-3 opacity-30 hover:opacity-70 transition duration-200"
                 icon="akar-icons:github-fill"
                 width="30"
                 height="30"
+                style={{ color: "#fff" }}
               />
             </a>
           </li>
@@ -58,11 +60,12 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer" // Added for accessibility
             >
-              <Iconify
-                className="mx-3 opacity-50 hover:opacity-90 transition duration-200"
+              <Icon
+                className="mx-3 opacity-30 hover:opacity-70 transition duration-200"
                 icon="akar-icons:linkedin-box-fill"
                 width="30"
                 height="30"
+                style={{ color: "#fff" }}
               />
             </a>
           </li>
@@ -72,11 +75,12 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer" // Added for accessibility
             >
-              <Iconify
-                className="mx-3 opacity-50 hover:opacity-90 transition duration-200"
+              <Icon
+                className="mx-3 opacity-30 hover:opacity-70 transition duration-200"
                 icon="akar-icons:file"
                 width="30"
                 height="30"
+                style={{ color: "#fff" }}
               />
             </a>
           </li>
@@ -84,7 +88,7 @@ const Navbar = () => {
 
         <div className="navbar-end md:hidden">
           <label htmlFor="my-drawer-3">
-            <Iconify
+            <Icon
               className="iconify cursor-pointer"
               icon="ci:hamburger"
               style={{ color: "white" }}
@@ -92,7 +96,7 @@ const Navbar = () => {
               height="40"
             />
           </label>
-        </div> */}
+        </div>
       </nav>
     </>
   );

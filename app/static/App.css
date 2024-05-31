@@ -68,3 +68,25 @@
   width: 50%;
   justify-content: flex-end;
 }
+
+/* Cursor */
+.cursor-glow {
+  position: fixed;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: lighten;
+  transition: transform 0.4s ease-in-out;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+
+  background: radial-gradient(
+    circle,
+    rgba(6, 31, 68, 0.8),
+    rgba(23, 32, 62, 0.6),
+    rgba(33, 34, 56, 0.4),
+    rgba(31, 30, 38, 0.2),
+    rgba(33, 33, 33, 0)
+  );
+}
