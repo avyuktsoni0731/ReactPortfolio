@@ -2,7 +2,7 @@ import React from "react";
 import Iconify, { Icon } from "@iconify/react";
 import Image from "next/image";
 import "../static/App.css";
-import { color } from "framer-motion";
+import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {
   return (
@@ -87,7 +87,7 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end md:hidden">
-          <label htmlFor="my-drawer-3">
+          {/* <label htmlFor="my-drawer-3">
             <Icon
               className="iconify cursor-pointer"
               icon="ci:hamburger"
@@ -95,7 +95,8 @@ const Navbar = () => {
               width="40"
               height="40"
             />
-          </label>
+          </label> */}
+          <HamburgerMenu />
         </div>
       </nav>
     </>
