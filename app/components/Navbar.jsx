@@ -1,5 +1,5 @@
 import React from "react";
-import Iconify, { Icon } from "@iconify/react";
+import { Icon } from "@iconify/react";
 import Image from "next/image";
 import "../static/App.css";
 import HamburgerMenu from "./HamburgerMenu";
@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar fixed px-10 md:px-20 backdrop-blur-2xl">
-        <div className="navbar-start navbarName">
+        <div className="navbar-start navbarName pl-10">
           <a href="/">
             <Image src="/Globe.png" alt="avyukt-png" width={80} height={80} />
           </a>
@@ -35,10 +35,7 @@ const Navbar = () => {
           </li>
         </div>
 
-        <div className="navbar-start md:hidden"></div>
-        <div className="navbar-center"></div>
-
-        <div className="navbar-end hidden md:flex md:flex-row list-none opacity-100">
+        <div className="navbar-end hidden md:flex md:flex-row list-none opacity-100 pr-10">
           <li>
             <a
               href="https://github.com/avyuktsoni0731"
@@ -87,15 +84,6 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end md:hidden">
-          {/* <label htmlFor="my-drawer-3">
-            <Icon
-              className="iconify cursor-pointer"
-              icon="ci:hamburger"
-              style={{ color: "white" }}
-              width="40"
-              height="40"
-            />
-          </label> */}
           <HamburgerMenu />
         </div>
       </nav>

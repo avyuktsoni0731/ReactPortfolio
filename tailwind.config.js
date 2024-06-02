@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
+import { color } from "framer-motion";
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,6 +15,11 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
       },
+    },
+    colors: {
+      webGreen: "#64ffda",
+      webRed: "#ff2e63",
+      webGrey: "#a8b2d1",
     },
   },
   plugins: [daisyui],
