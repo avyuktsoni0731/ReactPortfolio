@@ -56,7 +56,7 @@ const HamburgerMenu = () => {
                 })}
               </ul>
 
-              <ul className="mt-[45vh] text-lg">
+              <ul className="mt-[40vh] text-lg">
                 <li className="py-6">
                   <a
                     href="https://github.com/avyuktsoni0731"
