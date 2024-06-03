@@ -9,7 +9,8 @@ import { color } from "framer-motion";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-screen w-screen">
+      {/* <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[100vh]"> */}
+      <div className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[100vh]">
         <div className="px-16 md:px-96 space-y-4">
           <Reveal>
             <h1 className="text-2xl md:text-4xl font-bold text-[#ccd6f6]">
@@ -47,7 +48,8 @@ const About = () => {
             </Reveal>
           </div>
         </div>
-      </section>
+      </div>
+      {/* </section> */}
     </>
   );
 };

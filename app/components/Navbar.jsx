@@ -24,13 +24,13 @@ const Navbar = () => {
           <li className="mr-3 text-[#64ffda] transition duration-300">
             <a href="#main">Home</a>
           </li>
-          <li className="mr-3 hover:text-white/90 transition duration-300">
+          <li className="mr-3 hover:text-[#fff] transition duration-300">
             <a href="#about">About Me</a>
           </li>
-          <li className="mr-3 hover:text-white/90 transition duration-300">
+          <li className="mr-3 hover:text-[#fff] transition duration-300">
             <a href="#work">Projects</a>
           </li>
-          <li className="mr-3 hover:text-white/90 transition duration-300">
+          <li className="mr-3 hover:text-[#fff] transition duration-300">
             <a href="#contact">Contact</a>
           </li>
         </div>

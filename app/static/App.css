@@ -41,37 +41,6 @@
   }
 }
 
-/* Navbar */
-
-.navbar {
-  display: flex;
-  align-items: center;
-  padding: var(--navbar-padding, 0.5rem /* 8px */);
-  min-height: 4rem /* 64px */;
-  width: 100%;
-}
-:where(.navbar > *) {
-  display: inline-flex;
-  align-items: center;
-}
-
-.navbar-start {
-  width: 50%;
-  justify-content: flex-start;
-}
-
-.navbar-center {
-  flex-shrink: 0;
-}
-
-.navbar-end {
-  width: 50%;
-  justify-content: flex-end;
-}
-
-nav {
-  z-index: 1;
-}
 .fadeAnimate {
   animation: fadeInOut 1s infinite alternate;
 }
@@ -128,6 +97,11 @@ nav {
   height: 100%;
   background-color: #64ffda; /* Adjust color as needed */
   transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+/* Navbar */
+.navbar {
+  z-index: 1;
 }
 
 /* About */
