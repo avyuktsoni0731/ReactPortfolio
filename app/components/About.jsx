@@ -9,8 +9,7 @@ import { color } from "framer-motion";
 const About = () => {
   return (
     <>
-      {/* <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[100vh]"> */}
-      <div className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[100vh]">
+      <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[120vh]">
         <div className="px-16 md:px-96 space-y-4">
           <Reveal>
             <h1 className="text-2xl md:text-4xl font-bold text-[#ccd6f6]">
@@ -23,10 +22,10 @@ const About = () => {
                 <p className="">
                   Hey there! My name is Avyukt, and I{" "}
                   <span className="text-webRed">love</span> creating things that
-                  live on the internet. My interest in web development started
-                  back in 2012 when I decided to try editing custom Tumblr
-                  themes - turns out hacking together a custom reblog button
-                  taught me a lot about HTML & CSS!
+                  live on the internet. My interest in programming started back
+                  in my school life, when I used to create mini projects using
+                  Python themes - turns out hacking together a custom reblog
+                  button taught me a lot about HTML & CSS!
                 </p>
                 <p className="">
                   Fast-forward to today, and Ive had the privilege of working at
@@ -48,8 +47,7 @@ const About = () => {
             </Reveal>
           </div>
         </div>
-      </div>
-      {/* </section> */}
+      </section>
     </>
   );
 };

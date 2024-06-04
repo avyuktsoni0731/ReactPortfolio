@@ -15,8 +15,7 @@ const App = () => {
   });
 
   return (
-    // <section className="flex flex-col justify-center items-center h-[100vh]">
-    <div className="flex flex-col justify-center items-center h-[100vh]">
+    <section className="flex flex-col justify-center items-center h-[120vh]">
       <div className="h-[20vh] font-Montserrat animate-in">
         <Reveal>
           <div className="py-2">
@@ -36,8 +35,7 @@ const App = () => {
           </p>
         </Reveal>
       </div>
-    </div>
-    // </section>
+    </section>
   );
 };
 
