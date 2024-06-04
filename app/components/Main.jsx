@@ -15,7 +15,7 @@ const App = () => {
   });
 
   return (
-    <section className="flex flex-col justify-center items-center h-[120vh]">
+    <section className="flex flex-col justify-center items-center h-screen">
       <div className="h-[20vh] font-Montserrat animate-in">
         <Reveal>
           <div className="py-2">

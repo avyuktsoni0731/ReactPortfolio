@@ -9,7 +9,7 @@ import { color } from "framer-motion";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-[120vh]">
+      <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-screen">
         <div className="px-16 md:px-96 space-y-4">
           <Reveal>
             <h1 className="text-2xl md:text-4xl font-bold text-[#ccd6f6]">
@@ -20,19 +20,31 @@ const About = () => {
             <Reveal>
               <div className="text-base font-mono space-y-6">
                 <p className="">
-                  Hey there! My name is Avyukt, and I{" "}
+                  Hey there! My name is{" "}
+                  <span className="text-webGreen">Avyukt</span> , and I{" "}
                   <span className="text-webRed">love</span> creating things that
                   live on the internet. My interest in programming started back
                   in my school life, when I used to create mini projects using
-                  Python themes - turns out hacking together a custom reblog
-                  button taught me a lot about HTML & CSS!
+                  Python - Well, lets just say I like experimenting and creating
+                  things in my own way and turning ideas into reality!
                 </p>
                 <p className="">
-                  Fast-forward to today, and Ive had the privilege of working at
-                  an advertising agency, a start-up, a huge corporation, and a
-                  student-led design studio. My main focus these days is
-                  building accessible, inclusive products and digital
-                  experiences at Upstatement for a variety of clients.
+                  Fast-forward to today, I am current a 1st year undergrad
+                  student pursuing my Bachelors of Technology, majoring in
+                  <span className="text-webGreen">
+                    {" "}
+                    Computer Engineering
+                  </span> @{" "}
+                  <span className="text-[#e8e8e8]">
+                    <a
+                      href="https://amu.ac.in/colleges/zakir-husain-college-of-engineering-and-technology"
+                      target="_blank"
+                    >
+                      Zakir Husain College of Engineering & Technology, AMU.
+                    </a>
+                  </span>{" "}
+                  My main focus these days is learning and building accessable
+                  and inclusive products that make a differnce,
                 </p>
               </div>
             </Reveal>
