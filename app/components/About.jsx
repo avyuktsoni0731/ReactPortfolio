@@ -16,7 +16,7 @@ const About = () => {
               About Me<span className="text-webGreen fadeAnimate">.</span>
             </h1>
           </Reveal>
-          <div className="flex flex-col md:flex-row justify-between space-x-4 space-y-6">
+          <div className="flex flex-col md:flex-row justify-center items-center space-x-4">
             <Reveal>
               <div className="text-base font-mono space-y-6">
                 <p className="">
