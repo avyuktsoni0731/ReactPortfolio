@@ -69,7 +69,7 @@ export function Connect() {
               Email:
               <a
                 className="text-[#d2b94b] hover:underline dark:text-gray-50"
-                href="https://github.com/avyuktsoni0731"
+                href="mailto:ceo@avyuktsoni.co"
               >
                 ceo@avyuktsoni.co
               </a>

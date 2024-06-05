@@ -14,7 +14,7 @@ const Navbar = () => {
             <Image src="/Globe.png" alt="avyukt-png" width={80} height={80} />
           </a>
           <a href="/">
-            <h1 className="text-sm lg:text-3xl font-bold text-white font-Montserrat">
+            <h1 className="text-sm text-[#ccd6f6] lg:text-3xl font-bold font-Montserrat">
               <span className="text-[#64ffda]">A</span>vyukt Soni
               <span className="text-[#64ffda] fadeAnimate">_</span>
             </h1>
