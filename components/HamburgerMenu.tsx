@@ -1,5 +1,5 @@
 "use client";
-import { routes } from "../src/routes";
+import { routes } from "../app/src/routes";
 import { Icon } from "@iconify/react";
 import { useRef, useState } from "react";
 import { useClickAway } from "react-use";

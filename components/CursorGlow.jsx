@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import "../static/App.css";
+import "../app/static/App.css";
 
 const CursorGlow = () => {
   const [x, setX] = useState(0);

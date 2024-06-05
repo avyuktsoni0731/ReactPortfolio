@@ -98,14 +98,14 @@ const cards: CardType[] = [
     title: "FluxFeed",
     id: 5,
   },
-  //   {
-  //     url: "/imgs/abstract/6.jpg",
-  //     title: "Title 6",
-  //     id: 6,
-  //   },
-  //   {
-  //     url: "/imgs/abstract/7.jpg",
-  //     title: "Title 7",
-  //     id: 7,
-  //   },
+  // {
+  //   url: "/imgs/abstract/6.jpg",
+  //   title: "Title 6",
+  //   id: 6,
+  // },
+  // {
+  //   url: "/imgs/abstract/7.jpg",
+  //   title: "Title 7",
+  //   id: 7,
+  // },
 ];

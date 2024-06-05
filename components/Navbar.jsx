@@ -1,7 +1,7 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import Image from "next/image";
-import "../static/App.css";
+import "../app/static/App.css";
 import HamburgerMenu from "./HamburgerMenu";
 
 const Navbar = () => {

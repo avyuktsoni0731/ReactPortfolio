@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import "../static/App.css";
+import "../app/static/App.css";
 
 const ScrollProgressBar = () => {
   const [progress, setProgress] = useState(0);

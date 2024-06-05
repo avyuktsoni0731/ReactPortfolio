@@ -1,7 +1,7 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 import Reveal from "./Reveal";
-import "../static/App.css"; // Make sure to include the necessary CSS in this file
+import "../app/static/App.css"; // Make sure to include the necessary CSS in this file
 import { useTypewriter } from "react-simple-typewriter";
 
 const App = () => {
@@ -15,7 +15,10 @@ const App = () => {
   });
 
   return (
-    <section className="flex flex-col justify-center items-center h-screen">
+    <section
+      id="main"
+      className="flex flex-col justify-center items-center h-screen"
+    >
       <div className="h-[20vh] font-Montserrat animate-in">
         <Reveal>
           <div className="py-2">
