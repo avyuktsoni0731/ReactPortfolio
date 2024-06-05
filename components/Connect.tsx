@@ -150,5 +150,3 @@ function GithubIcon() {
     </svg>
   );
 }
-
-// export default GithubIcon;
