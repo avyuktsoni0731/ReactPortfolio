@@ -179,21 +179,30 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">
-                      PowerOptima {"(Google Solution Challenge)"}
-                    </h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      Energy Efficiency Calculator to optimize energy
-                      consumption in their devices, leading to wasted resources,
-                      higher costs, and environmental impact. Using prediction
-                      models, the efficiency of Wind Turbine and Solar Cell are
-                      calculated according to metrics entered by the user.
-                    </p>
-                    <div className="mt-auto">
-                      <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                    <Reveal>
+                      <h3 className="text-2xl font-semibold">
+                        PowerOptima {"(Google Solution Challenge)"}
+                      </h3>
+                    </Reveal>
+                    <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Python, Flask, Firebase, Numpy, Pandas
+                        Energy Efficiency Calculator to optimize energy
+                        consumption in their devices, leading to wasted
+                        resources, higher costs, and environmental impact. Using
+                        prediction models, the efficiency of Wind Turbine and
+                        Solar Cell are calculated according to metrics entered
+                        by the user.
                       </p>
+                    </Reveal>
+                    <div className="mt-auto">
+                      <Reveal>
+                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                      </Reveal>
+                      <Reveal>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Python, Flask, Firebase, Numpy, Pandas
+                        </p>
+                      </Reveal>
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/efficalc"
@@ -216,19 +225,27 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">FluxFeed</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      A dynamic web-based news aggregator that uses web-scraping
-                      empowering users to stay informed with the latest
-                      headlines, from diverse news sources, which keeps on
-                      updating every few seconds as the news on the source
-                      website gets updated.
-                    </p>
-                    <div className="mt-auto">
-                      <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                    <Reveal>
+                      <h3 className="text-2xl font-semibold">FluxFeed</h3>
+                    </Reveal>
+                    <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Python, Flask, Beautiful Soup {"(Web Scraping)"}
+                        A dynamic web-based news aggregator that uses
+                        web-scraping empowering users to stay informed with the
+                        latest headlines, from diverse news sources, which keeps
+                        on updating every few seconds as the news on the source
+                        website gets updated.
                       </p>
+                    </Reveal>
+                    <div className="mt-auto">
+                      <Reveal>
+                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                      </Reveal>
+                      <Reveal>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Python, Flask, Beautiful Soup {"(Web Scraping)"}
+                        </p>
+                      </Reveal>
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/vitalWebApp"

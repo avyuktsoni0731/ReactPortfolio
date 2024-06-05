@@ -24,27 +24,6 @@ const navLinks = [
 ];
 
 const Navbar = () => {
-  // const [open, setOpen] = useState(false);
-  // const toggleMenu = () => {
-  //   setOpen((prevOpen) => !prevOpen);
-  // };
-  const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
-
-  useClickAway(ref, () => setOpen(false));
-
-  const menuVars = {
-    initial: {
-      scaleY: 0,
-    },
-    animate: {
-      scaleY: 1,
-    },
-    exit: {
-      scaleY: 0,
-    },
-  };
-
   return (
     <>
       <nav className="navbar fixed px-10 md:px-20 backdrop-blur-2xl">
@@ -164,13 +143,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-const MobileNavLink = ({ title, href }) => {
-  return (
-    <div className="text-5xl uppercase text-black">
-      <Link href={href} target="_blank">
-        {title}
-      </Link>
-    </div>
-  );
-};
