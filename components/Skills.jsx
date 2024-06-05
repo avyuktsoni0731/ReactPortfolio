@@ -3,40 +3,51 @@
  * @see https://v0.dev/t/ryErlNM9PKD
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
+import Reveal from "./Reveal";
+
 export default function Skills() {
   return (
     <section className="w-screen h-auto flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="space-y-2 text-center">
-            <h2 className="text-3xl font-bold text-[#ccd6f6] tracking-tighter sm:text-4xl md:text-5xl font-Montserrat">
-              Coding Superpowers Unlocked{" "}
-              <span className="text-webGreen fadeAnimate">!</span>
-            </h2>
-            <p className="max-w-[700px] font-mono text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Check out my technical skills and expertise.
-            </p>
+            <Reveal>
+              <h2 className="text-3xl font-bold text-[#ccd6f6] tracking-tighter sm:text-4xl md:text-5xl font-Montserrat">
+                Coding Superpowers Unlocked{" "}
+                <span className="text-webGreen fadeAnimate">!</span>
+              </h2>
+              <p className="max-w-[700px] font-mono text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                Check out my technical skills and expertise.
+              </p>
+            </Reveal>
           </div>
           <div className="grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-            <div className="flex items-center justify-center space-y-4">
-              <div className="flex items-center space-x-2">
-                <CodeIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webGreen" />
-                <h3 className="font-Montserrat text-lg font-bold">Languages</h3>
-              </div>
-              <div className="font-mono grid grid-cols-2 gap-4">
-                <div />
-                <div />
-                <div />
-                <div />
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <Reveal>
+                <div className="flex items-center space-x-2">
+                  <CodeIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webGreen" />
+                  <h3 className="font-Montserrat text-lg font-bold">
+                    Languages
+                  </h3>
+                </div>
+              </Reveal>
+              <div className="font-mono text-md flex flex-col items-center justify-center gap-2">
+                <p>C++</p>
+                <p>C</p>
+                <p>Python</p>
+                <p></p>
+                <p></p>
               </div>
             </div>
-            <div className="flex items-center justify-center space-y-4">
-              <div className="flex items-center space-x-2">
-                <PuzzleIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webRed" />
-                <h3 className="font-Montserrat text-lg font-bold">
-                  Frameworks
-                </h3>
-              </div>
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <Reveal>
+                <div className="flex items-center space-x-2">
+                  <PuzzleIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webRed" />
+                  <h3 className="font-Montserrat text-lg font-bold">
+                    Frameworks
+                  </h3>
+                </div>
+              </Reveal>
               <div className="grid grid-cols-2 gap-4">
                 <div />
                 <div />
@@ -44,11 +55,13 @@ export default function Skills() {
                 <div />
               </div>
             </div>
-            <div className="font-Montserrat flex items-center justify-center space-y-4">
-              <div className="flex items-center space-x-2">
-                <WrenchIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#d2b94b]" />
-                <h3 className="text-lg font-bold">Tools</h3>
-              </div>
+            <div className="flex flex-col items-center justify-center space-y-4">
+              <Reveal>
+                <div className="flex items-center space-x-2">
+                  <WrenchIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#d2b94b]" />
+                  <h3 className="font-Montserrat text-lg font-bold">Tools</h3>
+                </div>
+              </Reveal>
               <div className="grid grid-cols-2 gap-4">
                 <div />
                 <div />
