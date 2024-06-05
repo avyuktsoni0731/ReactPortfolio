@@ -228,10 +228,9 @@ export function Projects() {
   );
 }
 
-function ArrowRightIcon(props) {
+function ArrowRightIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -248,10 +247,9 @@ function ArrowRightIcon(props) {
   );
 }
 
-function ChevronLeftIcon(props) {
+function ChevronLeftIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -267,10 +265,9 @@ function ChevronLeftIcon(props) {
   );
 }
 
-function ChevronRightIcon(props) {
+function ChevronRightIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
