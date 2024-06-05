@@ -21,7 +21,8 @@ export default function Skills() {
               </p>
             </Reveal>
           </div>
-          <div className="grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+          {/* <div className="grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"> */}
+          <div className="flex flex-col items-center md:flex-row md:items-start justify-between w-full max-w-5xl gap-6">
             <div className="flex flex-col items-center justify-center space-y-4">
               <Reveal>
                 <div className="flex items-center space-x-2">
@@ -31,12 +32,28 @@ export default function Skills() {
                   </h3>
                 </div>
               </Reveal>
-              <div className="font-mono text-md flex flex-col items-center justify-center gap-2">
-                <p>C++</p>
-                <p>C</p>
-                <p>Python</p>
-                <p></p>
-                <p></p>
+              <div className="font-mono text-md flex flex-col justify-center gap-2">
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Python
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> C
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> C++
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> JavaScript
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> TypeScript
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> HTML5
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> CSS3
+                </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4">
@@ -48,11 +65,34 @@ export default function Skills() {
                   </h3>
                 </div>
               </Reveal>
-              <div className="grid grid-cols-2 gap-4">
-                <div />
-                <div />
-                <div />
-                <div />
+              <div className="font-mono text-md flex flex-col justify-center gap-2">
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Flask
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> React.js
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> MongoDB
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Node.js
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Tailwind CSS
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Next.js
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Selenium Webdriver
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Pandas
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Matplotlib
+                </p>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4">
@@ -62,11 +102,28 @@ export default function Skills() {
                   <h3 className="font-Montserrat text-lg font-bold">Tools</h3>
                 </div>
               </Reveal>
-              <div className="grid grid-cols-2 gap-4">
-                <div />
-                <div />
-                <div />
-                <div />
+              <div className="font-mono text-md flex flex-col justify-center gap-2">
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> VS Code
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Git
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> MS Office
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Ubuntu {"(Linux)"}
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> DigitalOcean
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Render
+                </p>
+                <p className="text-[#ccd6f6]">
+                  <span className="text-webGreen">&gt;</span> Vercel
+                </p>
               </div>
             </div>
           </div>
