@@ -29,7 +29,7 @@ import Image from "next/image";
 
 export function Projects() {
   return (
-    <section className="w-screen h-screen flex justify-center items-center">
+    <section className="w-screen h-screen flex justify-center items-start">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
           <h2 className="font-Montserrat text-[#ccd6f6] text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">

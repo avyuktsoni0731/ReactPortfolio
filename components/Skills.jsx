@@ -32,28 +32,43 @@ export default function Skills() {
                   </h3>
                 </div>
               </Reveal>
+
               <div className="font-mono text-md flex flex-col justify-center gap-2">
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Python
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> C
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> C++
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> JavaScript
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> TypeScript
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> HTML5
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> CSS3
-                </p>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Python
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> C
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> C++
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> JavaScript
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> TypeScript
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> HTML5
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> CSS3
+                  </p>
+                </Reveal>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4">
@@ -66,33 +81,52 @@ export default function Skills() {
                 </div>
               </Reveal>
               <div className="font-mono text-md flex flex-col justify-center gap-2">
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Flask
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> React.js
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> MongoDB
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Node.js
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Tailwind CSS
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Next.js
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Selenium Webdriver
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Pandas
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Matplotlib
-                </p>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Flask
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> React.js
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> MongoDB
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Node.js
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Tailwind CSS
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Next.js
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Selenium
+                    Webdriver
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Pandas
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Matplotlib
+                  </p>
+                </Reveal>
               </div>
             </div>
             <div className="flex flex-col items-center justify-center space-y-4">
@@ -103,27 +137,42 @@ export default function Skills() {
                 </div>
               </Reveal>
               <div className="font-mono text-md flex flex-col justify-center gap-2">
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> VS Code
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Git
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> MS Office
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Ubuntu {"(Linux)"}
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> DigitalOcean
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Render
-                </p>
-                <p className="text-[#ccd6f6]">
-                  <span className="text-webGreen">&gt;</span> Vercel
-                </p>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> VS Code
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Git
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> MS Office
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Ubuntu{" "}
+                    {"(Linux)"}
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> DigitalOcean
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Render
+                  </p>
+                </Reveal>
+                <Reveal>
+                  <p className="text-[#ccd6f6]">
+                    <span className="text-webGreen">&gt;</span> Vercel
+                  </p>
+                </Reveal>
               </div>
             </div>
           </div>
