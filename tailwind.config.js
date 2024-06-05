@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 import daisyui from "daisyui";
-import { color } from "framer-motion";
 module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",

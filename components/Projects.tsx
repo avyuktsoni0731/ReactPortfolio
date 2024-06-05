@@ -26,15 +26,18 @@ import {
   Carousel,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import Reveal from "./Reveal";
 
 export function Projects() {
   return (
     <section className="w-screen h-screen flex justify-center items-start">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
-          <h2 className="font-Montserrat text-[#ccd6f6] text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-            My Projects <span className="text-webGreen fadeAnimate">.</span>
-          </h2>
+          <Reveal>
+            <h2 className="font-Montserrat text-[#ccd6f6] text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
+              My Projects <span className="text-webGreen fadeAnimate">.</span>
+            </h2>
+          </Reveal>
           <Carousel className="w-full max-w-6xl pt-8 font-mono">
             <CarouselContent>
               <CarouselItem>
@@ -47,17 +50,25 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">Vital</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      A health assiance provider that provides feedback
-                      according to age, gender, allergies and health problems.
-                    </p>
-                    <div className="mt-auto">
-                      <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                    <Reveal>
+                      <h3 className="text-2xl font-semibold">Vital</h3>
+                    </Reveal>
+                    <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Flask, React.js, Next.js, MongoDB, Gemini API, Google
-                        Maps API, Google OAuth 2.0
+                        A health assiance provider that provides feedback
+                        according to age, gender, allergies and health problems.
                       </p>
+                    </Reveal>
+                    <div className="mt-auto">
+                      <Reveal>
+                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                      </Reveal>
+                      <Reveal>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Flask, React.js, Next.js, MongoDB, Gemini API, Google
+                          Maps API, Google OAuth 2.0
+                        </p>
+                      </Reveal>
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/vitalWebApp"
@@ -80,19 +91,27 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">CryptoDrive</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      An application Base-64 Cryptographic Encryption based
-                      cloud file-storage web platform. This project addresses
-                      the issue of insecurity or data-leak of files uploaded on
-                      cloud platforms.
-                    </p>
-                    <div className="mt-auto">
-                      <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                    <Reveal>
+                      <h3 className="text-2xl font-semibold">CryptoDrive</h3>
+                    </Reveal>
+                    <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Flask, React.js, Google OAuth 2.0, Google Drive v3 API,
-                        Cryptography Fernet
+                        An application Base-64 Cryptographic Encryption based
+                        cloud file-storage web platform. This project addresses
+                        the issue of insecurity or data-leak of files uploaded
+                        on cloud platforms.
                       </p>
+                    </Reveal>
+                    <div className="mt-auto">
+                      <Reveal>
+                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                      </Reveal>
+                      <Reveal>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Flask, React.js, Google OAuth 2.0, Google Drive v3
+                          API, Cryptography Fernet
+                        </p>
+                      </Reveal>
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/CryptoDrive"
@@ -115,21 +134,29 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">PyMongoAuth</h3>
-                    <p className="text-gray-500 dark:text-gray-400">
-                      Developed a SHA-256 (PBKDF2 HMAC) Cryptographic Encryption
-                      based Authentication System, designed to provide a secure
-                      and reliable method for storing and verifying user
-                      passwords using cryptographic techniques. Using hashing
-                      algorithms, salted password storage, and MongoDB as the
-                      database backend to ensure data integrity and
-                      confidentiality.
-                    </p>
-                    <div className="mt-auto">
-                      <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                    <Reveal>
+                      <h3 className="text-2xl font-semibold">PyMongoAuth</h3>
+                    </Reveal>
+                    <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
-                        Python, MongoDB, SHA256{"(PKDF2_HMAC)"}
+                        Developed a SHA-256 (PBKDF2 HMAC) Cryptographic
+                        Encryption based Authentication System, designed to
+                        provide a secure and reliable method for storing and
+                        verifying user passwords using cryptographic techniques.
+                        Using hashing algorithms, salted password storage, and
+                        MongoDB as the database backend to ensure data integrity
+                        and confidentiality.
                       </p>
+                    </Reveal>
+                    <div className="mt-auto">
+                      <Reveal>
+                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                      </Reveal>
+                      <Reveal>
+                        <p className="text-gray-500 dark:text-gray-400">
+                          Python, MongoDB, SHA256{"(PKDF2_HMAC)"}
+                        </p>
+                      </Reveal>
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/python-mongo-authentication"

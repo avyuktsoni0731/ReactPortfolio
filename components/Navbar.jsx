@@ -1,10 +1,50 @@
-import React from "react";
+"use client";
+import { React, useState, useRef } from "react";
+import { useClickAway } from "react-use";
 import { Icon } from "@iconify/react";
+import Link from "next/link";
 import Image from "next/image";
 import "../app/static/App.css";
 import HamburgerMenu from "./HamburgerMenu";
+import Ham from "./Ham";
+import { Squash as Hamburger } from "hamburger-react";
+import { animate, motion } from "framer-motion";
+
+const navLinks = [
+  { title: "Home", href: "/" },
+  { title: "About Me", href: "#about" },
+  { title: "Skills", href: "#skills" },
+  { title: "Projects", href: "#projects" },
+  { title: "Contact Me", href: "#contact" },
+  {
+    title: "Resume / CV",
+    href: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
+    target: "_blank",
+  },
+];
 
 const Navbar = () => {
+  // const [open, setOpen] = useState(false);
+  // const toggleMenu = () => {
+  //   setOpen((prevOpen) => !prevOpen);
+  // };
+  const [isOpen, setOpen] = useState(false);
+  const ref = useRef(null);
+
+  useClickAway(ref, () => setOpen(false));
+
+  const menuVars = {
+    initial: {
+      scaleY: 0,
+    },
+    animate: {
+      scaleY: 1,
+    },
+    exit: {
+      scaleY: 0,
+    },
+  };
+
   return (
     <>
       <nav className="navbar fixed px-10 md:px-20 backdrop-blur-2xl">
@@ -84,11 +124,53 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end md:hidden">
-          <HamburgerMenu />
+          {/* <HamburgerMenu /> */}
+          <Ham />
         </div>
+        {/* <div className="navbar-end md:hidden">
+          <div ref={ref} className="lg:hidden inline-block"></div>
+          <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+          {isOpen && (
+            <motion.div
+              variants={menuVars}
+              initial="initial"
+              animate="animate"
+              exit="exit"
+              className="fixed left-0 top-0 w-full h-screen bg-webGrey text-black"
+            >
+              <div className="flex h-full flex-col">
+                <div
+                  className="flex flex-col h-full items-center justify-center font-Montserrat
+          "
+                >
+                  {navLinks.map((link, index) => {
+                    return (
+                      <MobileNavLink
+                        key={index}
+                        title={link.title}
+                        href={link.href}
+                        target="_blank"
+                      />
+                    );
+                  })}
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </div> */}
       </nav>
     </>
   );
 };
 
 export default Navbar;
+
+const MobileNavLink = ({ title, href }) => {
+  return (
+    <div className="text-5xl uppercase text-black">
+      <Link href={href} target="_blank">
+        {title}
+      </Link>
+    </div>
+  );
+};

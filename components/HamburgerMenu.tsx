@@ -111,7 +111,7 @@ const HamburgerMenu = () => {
               animate={{ opacity: 0.95 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed left-0 shadow-4xl right-0 top-0 p-5 w-screen h-screen overflow-y-hidden flex flex-col" // Dynamic height for responsiveness
+              className="fixed left-0 shadow-4xl right-0 top-16 p-5 w-screen h-screen overflow-y-hidden flex flex-col" // Dynamic height for responsiveness
               // Optional: Add overflow-y: auto for content overflow on small screens
             >
               <ul className="grid gap-4">
