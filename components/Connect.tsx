@@ -60,6 +60,12 @@ export function Connect() {
           </div>
           <div className="space-y-2 font-mono">
             <p className="text-gray-500 dark:text-gray-400">
+              I&apos;d <span className="text-webRed">love</span> to hear from
+              you<span className="text-webGreen">!</span> Feel free to reach out
+              with any questions or just to say hello
+              <span className="text-webGreen">.</span>
+            </p>
+            <p className="text-gray-500 dark:text-gray-400">
               Email:
               <a
                 className="text-[#d2b94b] hover:underline dark:text-gray-50"
@@ -67,12 +73,6 @@ export function Connect() {
               >
                 ceo@avyuktsoni.co
               </a>
-            </p>
-            <p className="text-gray-500 dark:text-gray-400">
-              I&apos;d <span className="text-webRed">love</span> to hear from
-              you<span className="text-webGreen">!</span> Feel free to reach out
-              with any questions or just to say hello
-              <span className="text-webGreen">.</span>
             </p>
           </div>
         </div>
@@ -151,4 +151,4 @@ function GithubIcon() {
   );
 }
 
-export default GithubIcon;
+// export default GithubIcon;
