@@ -63,7 +63,7 @@ export function Projects() {
                         href="https://github.com/avyuktsoni0731/vitalWebApp"
                         target="_blank"
                       >
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon />
                         View Project
                       </Link>
                     </div>
@@ -98,7 +98,7 @@ export function Projects() {
                         href="https://github.com/avyuktsoni0731/CryptoDrive"
                         target="_blank"
                       >
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon />
                         View Project
                       </Link>
                     </div>
@@ -115,7 +115,7 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">Vital</h3>
+                    <h3 className="text-2xl font-semibold">PyMongoAuth</h3>
                     <p className="text-gray-500 dark:text-gray-400">
                       Developed a SHA-256 (PBKDF2 HMAC) Cryptographic Encryption
                       based Authentication System, designed to provide a secure
@@ -135,7 +135,7 @@ export function Projects() {
                         href="https://github.com/avyuktsoni0731/python-mongo-authentication"
                         target="_blank"
                       >
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon />
                         View Project
                       </Link>
                     </div>
@@ -172,7 +172,7 @@ export function Projects() {
                         href="https://github.com/avyuktsoni0731/efficalc"
                         target="_blank"
                       >
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon />
                         View Project
                       </Link>
                     </div>
@@ -189,7 +189,7 @@ export function Projects() {
                     width={600}
                   />
                   <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-semibold">Vital</h3>
+                    <h3 className="text-2xl font-semibold">FluxFeed</h3>
                     <p className="text-gray-500 dark:text-gray-400">
                       A dynamic web-based news aggregator that uses web-scraping
                       empowering users to stay informed with the latest
@@ -207,7 +207,7 @@ export function Projects() {
                         href="https://github.com/avyuktsoni0731/vitalWebApp"
                         target="_blank"
                       >
-                        <ArrowRightIcon className="h-4 w-4" />
+                        <ArrowRightIcon />
                         View Project
                       </Link>
                     </div>
@@ -216,10 +216,10 @@ export function Projects() {
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious className="absolute left-4 top-1/4 md:left-4 md:top-1/2 -translate-y-1/2">
-              <ChevronLeftIcon className="h-6 w-6" />
+              <ChevronLeftIcon />
             </CarouselPrevious>
             <CarouselNext className="absolute right-4 top-1/4 md:right-4 md:top-1/2 -translate-y-1/2">
-              <ChevronRightIcon className="h-6 w-6" />
+              <ChevronRightIcon />
             </CarouselNext>
           </Carousel>
         </div>
