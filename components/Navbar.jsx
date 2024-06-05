@@ -1,27 +1,9 @@
 "use client";
-import { React, useState, useRef } from "react";
-import { useClickAway } from "react-use";
+import { React } from "react";
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 import Image from "next/image";
 import "../app/static/App.css";
-import HamburgerMenu from "./HamburgerMenu";
 import Ham from "./Ham";
-import { Squash as Hamburger } from "hamburger-react";
-import { animate, motion } from "framer-motion";
-
-const navLinks = [
-  { title: "Home", href: "/" },
-  { title: "About Me", href: "#about" },
-  { title: "Skills", href: "#skills" },
-  { title: "Projects", href: "#projects" },
-  { title: "Contact Me", href: "#contact" },
-  {
-    title: "Resume / CV",
-    href: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
-    target: "_blank",
-  },
-];
 
 const Navbar = () => {
   return (

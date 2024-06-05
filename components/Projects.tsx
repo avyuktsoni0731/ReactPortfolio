@@ -30,7 +30,10 @@ import Reveal from "./Reveal";
 
 export function Projects() {
   return (
-    <section className="w-screen h-screen flex justify-center items-start">
+    <section
+      id="projects"
+      className="w-screen h-auto flex justify-center items-start"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
           <Reveal>

@@ -4,6 +4,8 @@ import About from "../components/About";
 import Navbar from "../components/Navbar";
 import { Projects } from "@/components/Projects";
 import Skills from "../components/Skills";
+import { Experiences } from "@/components/Experiences";
+import { Connect } from "@/components/Connect";
 import ScrollProgressBar from "../components/ProgressBar";
 import CursorGlow from "../components/CursorGlow";
 import "./static/App.css";
@@ -19,6 +21,8 @@ export default function Home() {
         <About />
         <Skills />
         <Projects />
+        <Experiences />
+        <Connect />
       </main>
     </>
   );

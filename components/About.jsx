@@ -7,7 +7,10 @@ import "../app/static/App.css";
 const About = () => {
   return (
     <>
-      <section className="flex flex-col md:items-start md:justify-normal items-center justify-center h-auto">
+      <section
+        id="about"
+        className="flex flex-col md:items-start md:justify-normal items-center justify-center h-auto"
+      >
         <div className="px-16 xl:px-96 space-y-4 items-center">
           <Reveal>
             <h1

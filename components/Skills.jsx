@@ -7,7 +7,10 @@ import Reveal from "./Reveal";
 
 export default function Skills() {
   return (
-    <section className="w-screen h-auto flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+    <section
+      id="skills"
+      className="w-screen h-auto flex justify-center items-center py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800"
+    >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-6">
           <div className="space-y-2 text-center">

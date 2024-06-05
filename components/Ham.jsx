@@ -7,11 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import Hamburger from "hamburger-react";
 
 const navLinks = [
-  { title: "Home", href: "/" },
+  { title: "Home", href: "#main" },
   { title: "About Me", href: "#about" },
   { title: "Skills", href: "#skills" },
   { title: "Projects", href: "#projects" },
-  { title: "Contact Me", href: "#contact" },
+  { title: "Experiences", href: "#experiences" },
+  { title: "Contact Me", href: "#connect" },
   {
     title: "Resume / CV",
     href: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
