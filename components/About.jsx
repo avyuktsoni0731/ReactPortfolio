@@ -11,7 +11,7 @@ const About = () => {
         id="about"
         className="flex flex-col md:items-start md:justify-normal items-center justify-center h-auto"
       >
-        <div className="px-16 xl:px-96 space-y-4 items-center">
+        <div className="px-16 xl:px-80 space-y-4 items-center">
           <Reveal>
             <h1
               id="about"
@@ -27,10 +27,15 @@ const About = () => {
                   Hey there! My name is{" "}
                   <span className="text-webGreen">Avyukt</span> , and I{" "}
                   <span className="text-webRed">love</span> creating things that
-                  live on the internet. My interest in programming started back
-                  in my school life, when I used to create mini projects using
-                  Python - Well, lets just say I like experimenting and creating
-                  things in my own way and turning ideas into reality!
+                  live on the internet. My interest in technology started back
+                  in my school life, when I was in my 5th grade. I used to mod
+                  Grand Theft Auto using{" "}
+                  <span className="text-[#d2b94b] hover:text-[#e8e8e8] transition duration-200">
+                    <a href="https://openiv.com/">OpenIV</a>
+                  </span>{" "}
+                  by modifying it&apos;s original source code my own way - Well,
+                  lets just say I like experimenting and creating things in my
+                  own way and turning ideas into reality!
                 </p>
                 <p>
                   Fast-forward to today, I am currently a 1st year undergrad

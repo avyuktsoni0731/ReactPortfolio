@@ -47,7 +47,7 @@ export function Experiences() {
           <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
             <div className="mb-4 flex items-center justify-between">
               <Reveal>
-                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                <div className="inline-block rounded-lg bg-gray-100 py-1 text-sm dark:bg-gray-800">
                   May 2024 - Present
                 </div>
               </Reveal>
@@ -72,7 +72,7 @@ export function Experiences() {
           <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
             <div className="mb-4 flex items-center justify-between">
               <Reveal>
-                <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
+                <div className="inline-block rounded-lg bg-gray-100 py-1 text-sm dark:bg-gray-800">
                   Oct 2023 - Present
                 </div>
               </Reveal>
@@ -110,6 +110,7 @@ function BriefcaseIcon() {
       viewBox="0 0 24 24"
       fill="none"
       stroke="currentColor"
+      color="#64ffda"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
