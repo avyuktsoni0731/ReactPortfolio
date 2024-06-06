@@ -25,55 +25,9 @@ export function Experiences() {
       id="experiences"
       className="flex justify-center items-center w-full py-12 md:py-24 lg:py-32"
     >
-      {/* <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <h2 className="font-Montserrat text-[#ccd6f6] text-3xl font-bold tracking-tighter sm:text-5xl">
-              Experience<span className="text-webGreen fadeAnimate">.</span>
-            </h2>
-            <p className="max-w-[900px] text-webGrey font-mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-              Check out my work history and the communities I&apos;ve been a
-              part of<span className="text-webGreen">!</span>
-            </p>
-          </div>
-        </div>
-        <div className="mx-auto font-Montserrat grid gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3">
-          <div className="flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
-            <div className="mb-4 flex items-center justify-between">
-              <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                May 2024 - Present
-              </div>
-              <BriefcaseIcon />
-            </div>
-            <h3 className="text-xl font-bold">Web Developer</h3>
-            <p className="text-gray-500 dark:text-gray-400">AMURoboclub</p>
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-              description about my work in roboclub
-            </p>
-          </div>
-          <div className="flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
-            <div className="mb-4 flex items-center justify-between">
-              <div className="inline-block rounded-lg bg-gray-100 px-3 py-1 text-sm dark:bg-gray-800">
-                Oct 2023 - Present
-              </div>
-              <BriefcaseIcon />
-            </div>
-            <h3 className="text-xl font-bold">
-              Core Team Member {"(Web & Tech Team)"}
-            </h3>
-            <p className="text-gray-500 dark:text-gray-400">
-              Google Developer Student Clubs ZHCET
-            </p>
-            <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-              Contributed to the development of frontend of the TPO Website of
-              our college, using the MERN Stack.
-            </p>
-          </div>
-        </div>
-      </div> */}
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
+          <div className="space-y-2 flex flex-col justify-center items-center">
             <Reveal>
               <h2 className="font-Montserrat text-[#ccd6f6] text-3xl font-bold tracking-tighter sm:text-5xl">
                 Experience<span className="text-webGreen fadeAnimate">.</span>

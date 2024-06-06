@@ -29,10 +29,16 @@ const Navbar = () => {
             <a href="#about">About Me</a>
           </li>
           <li className="mr-3 hover:text-[#fff] transition duration-300">
-            <a href="#work">Projects</a>
+            <a href="#skills">Skills</a>
           </li>
           <li className="mr-3 hover:text-[#fff] transition duration-300">
-            <a href="#contact">Contact</a>
+            <a href="#projects">Projects</a>
+          </li>
+          <li className="mr-3 hover:text-[#fff] transition duration-300">
+            <a href="#experiences">Experience</a>
+          </li>
+          <li className="mr-3 hover:text-[#fff] transition duration-300">
+            <a href="#connect">Connect</a>
           </li>
         </div>
 

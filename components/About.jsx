@@ -33,7 +33,7 @@ const About = () => {
                   things in my own way and turning ideas into reality!
                 </p>
                 <p>
-                  Fast-forward to today, I am current a 1st year undergrad
+                  Fast-forward to today, I am currently a 1st year undergrad
                   student pursuing my Bachelors of Technology, majoring in
                   <span className="text-webGreen">
                     {" "}
@@ -50,7 +50,7 @@ const About = () => {
                 </p>
                 <p>
                   My main focus these days is learning somethign new and
-                  building accessable and inclusive products that make a
+                  building accessable and inclusive things that make a
                   differnce. I&apos;ve been so much into talking to new people,
                   making new friends, and building an inclusive community around
                   me. This is what I <span className="text-webRed">love</span>{" "}

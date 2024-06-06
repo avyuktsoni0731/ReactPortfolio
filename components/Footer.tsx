@@ -17,6 +17,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
@@ -25,8 +26,11 @@ export function Footer() {
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 md:px-0">
         <div className="flex items-center space-x-4">
           <Link className="flex items-center space-x-2" href="#">
-            <MountainIcon />
-            <span className="text-lg font-bold text-gray-200">Portfolio</span>
+            {/* <MountainIcon /> */}
+            <Image src="/Globe.png" alt="Favicon" width={50} height={50} />
+            <span className="text-lg font-bold text-gray-200">
+              Avyukt&apos;s Portfolio
+            </span>
           </Link>
           <p className="text-sm">© 2024 Avyukt Soni. All rights reserved.</p>
         </div>
