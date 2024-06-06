@@ -54,7 +54,7 @@ const About = () => {
                   </span>{" "}
                 </p>
                 <p>
-                  My main focus these days is learning somethign new and
+                  My main focus these days is learning something new and
                   building accessable and inclusive things that make a
                   differnce. I&apos;ve been so much into talking to new people,
                   making new friends, and building an inclusive community around
