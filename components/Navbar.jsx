@@ -11,7 +11,7 @@ const Navbar = () => {
       <nav className="navbar fixed px-10 md:px-2 backdrop-blur-2xl">
         <div className="navbar-start navbarName pl-10">
           <a href="/">
-            <Image src="/Globe.png" alt="avyukt-png" width={80} height={80} />
+            <Image src="/Globe.png" alt="avyukt-png" width={60} height={60} />
           </a>
           <a href="/">
             <h1 className="text-sm text-[#ccd6f6] lg:text-2xl font-bold font-Montserrat">
