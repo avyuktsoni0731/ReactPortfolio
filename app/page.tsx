@@ -3,6 +3,7 @@ import Main from "../components/Main";
 import About from "../components/About";
 import Navbar from "../components/Navbar";
 import { Projects } from "@/components/Projects";
+import { Projects2 } from "@/components/Projects2";
 import Skills from "../components/Skills";
 import { Experiences } from "@/components/Experiences";
 import { Connect } from "@/components/Connect";
@@ -23,6 +24,7 @@ export default function Home() {
         <Experiences />
         <Skills />
         <Projects />
+        {/* <Projects2 /> */}
         <Connect />
         <Footer />
       </main>

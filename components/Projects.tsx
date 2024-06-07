@@ -17,6 +17,7 @@ To read more about using these font, please visit the Next.js documentation:
 - App Directory: https://nextjs.org/docs/app/building-your-application/optimizing/fonts
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
+
 import Link from "next/link";
 import {
   CarouselItem,
@@ -54,7 +55,7 @@ export function Projects() {
                   />
                   <div className="flex flex-col gap-2">
                     <Reveal>
-                      <h3 className="text-2xl font-semibold">Vital</h3>
+                      <h3 className="text-3xl font-semibold">Vital</h3>
                     </Reveal>
                     <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -95,7 +96,7 @@ export function Projects() {
                   />
                   <div className="flex flex-col gap-2">
                     <Reveal>
-                      <h3 className="text-2xl font-semibold">CryptoDrive</h3>
+                      <h3 className="text-3xl font-semibold">CryptoDrive</h3>
                     </Reveal>
                     <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -138,7 +139,7 @@ export function Projects() {
                   />
                   <div className="flex flex-col gap-2">
                     <Reveal>
-                      <h3 className="text-2xl font-semibold">PyMongoAuth</h3>
+                      <h3 className="text-3xl font-semibold">PyMongoAuth</h3>
                     </Reveal>
                     <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">
@@ -183,7 +184,7 @@ export function Projects() {
                   />
                   <div className="flex flex-col gap-2">
                     <Reveal>
-                      <h3 className="text-2xl font-semibold">
+                      <h3 className="text-3xl font-semibold">
                         PowerOptima {"(Google Solution Challenge)"}
                       </h3>
                     </Reveal>
@@ -229,7 +230,7 @@ export function Projects() {
                   />
                   <div className="flex flex-col gap-2">
                     <Reveal>
-                      <h3 className="text-2xl font-semibold">FluxFeed</h3>
+                      <h3 className="text-3xl font-semibold">FluxFeed</h3>
                     </Reveal>
                     <Reveal>
                       <p className="text-gray-500 dark:text-gray-400">

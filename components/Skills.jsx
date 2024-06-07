@@ -26,7 +26,7 @@ export default function Skills() {
           </div>
           {/* <div className="grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"> */}
           <div className="flex flex-col items-center md:flex-row md:items-start justify-between w-full max-w-5xl gap-6">
-            <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-start justify-center space-y-4">
               <Reveal>
                 <div className="flex items-center space-x-2">
                   <CodeIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webGreen" />
@@ -74,7 +74,7 @@ export default function Skills() {
                 </Reveal>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-start justify-center space-y-4">
               <Reveal>
                 <div className="flex items-center space-x-2">
                   <PuzzleIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webRed" />
@@ -132,7 +132,7 @@ export default function Skills() {
                 </Reveal>
               </div>
             </div>
-            <div className="flex flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-start justify-center space-y-4">
               <Reveal>
                 <div className="flex items-center space-x-2">
                   <WrenchIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#d2b94b]" />

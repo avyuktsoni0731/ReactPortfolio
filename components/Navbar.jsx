@@ -8,20 +8,21 @@ import Ham from "./Ham";
 const Navbar = () => {
   return (
     <>
-      <nav className="navbar fixed px-10 md:px-20 backdrop-blur-2xl">
+      <nav className="navbar fixed px-10 md:px-2 backdrop-blur-2xl">
         <div className="navbar-start navbarName pl-10">
           <a href="/">
             <Image src="/Globe.png" alt="avyukt-png" width={80} height={80} />
           </a>
           <a href="/">
-            <h1 className="text-sm text-[#ccd6f6] lg:text-3xl font-bold font-Montserrat">
-              <span className="text-[#64ffda]">A</span>vyukt Soni
+            <h1 className="text-sm text-[#ccd6f6] lg:text-2xl font-bold font-Montserrat">
+              <span className="text-[#64ffda]">P</span>ortfolio
+              {/* <span className="text-[#64ffda]">A</span>vyukt Soni */}
               <span className="text-[#64ffda] fadeAnimate">_</span>
             </h1>
           </a>
         </div>
 
-        <div className="navbar-center font-Montserrat list-none text-lg text-white/50 hidden md:flex">
+        <div className="navbar-center font-Montserrat list-none text-lg text-white/50 hidden md:flex space-x-6">
           <li className="mr-3 text-[#64ffda] transition duration-300">
             <a href="#main">Home</a>
           </li>
