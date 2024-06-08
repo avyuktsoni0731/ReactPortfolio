@@ -23,7 +23,7 @@ export function Experiences() {
   return (
     <section
       id="experiences"
-      className="flex justify-center items-center w-full py-12 md:py-24 lg:py-32"
+      className="flex text-semiWhite justify-center items-center w-full py-12 md:py-24 lg:py-32"
     >
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -34,7 +34,7 @@ export function Experiences() {
               </h2>
             </Reveal>
             <Reveal>
-              <p className="max-w-[900px] text-webGrey font-Mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[900px] font-Mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Check out my work history and the communities I&apos;ve been a
                 part of
                 <span className="text-webGreen">!</span>

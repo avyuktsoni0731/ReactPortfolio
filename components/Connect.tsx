@@ -18,13 +18,12 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link";
-import Reveal from "./Reveal";
 
 export function Connect() {
   return (
     <section
       id="connect"
-      className="flex justify-center items-center bg-gray-100 dark:bg-gray-800 py-12 md:py-16 lg:py-20"
+      className="flex text-semiWhite justify-center items-center bg-gray-100 dark:bg-gray-800 py-12 md:py-16 lg:py-20"
     >
       <div className="container px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center space-y-6">

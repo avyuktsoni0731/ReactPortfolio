@@ -53,7 +53,7 @@ export function Projects() {
                     src="https://github.com/avyuktsoni0731/vitalWebApp/raw/main/static/Landing.png"
                     width={600}
                   />
-                  <div className="flex flex-col gap-2">
+                  <div className="flex text-semiWhite flex-col gap-2">
                     <Reveal>
                       <h3 className="text-2xl md:text-3xl font-semibold">
                         Vital
@@ -96,7 +96,7 @@ export function Projects() {
                     src="https://github.com/avyuktsoni0731/CryptoDrive/blob/main/images/Encrypted.png?raw=true"
                     width={600}
                   />
-                  <div className="flex flex-col gap-2">
+                  <div className="flex text-semiWhite flex-col gap-2">
                     <Reveal>
                       <h3 className="text-2xl md:text-3xl font-semibold">
                         CryptoDrive
@@ -141,7 +141,7 @@ export function Projects() {
                     src="https://github.com/avyuktsoni0731/python-mongo-authentication/blob/main/static/mongoDB.png?raw=true"
                     width={600}
                   />
-                  <div className="flex flex-col gap-2">
+                  <div className="flex text-semiWhite flex-col gap-2">
                     <Reveal>
                       <h3 className="text-2xl md:text-3xl font-semibold">
                         PyMongoAuth
@@ -188,7 +188,7 @@ export function Projects() {
                     src="https://github.com/avyuktsoni0731/efficalc/raw/main/images/1.png"
                     width={600}
                   />
-                  <div className="flex flex-col gap-2">
+                  <div className="flex text-semiWhite flex-col gap-2">
                     <Reveal>
                       <h3 className="text-2xl md:text-3xl font-semibold">
                         PowerOptima {"(Google Solution Challenge)"}
@@ -234,7 +234,7 @@ export function Projects() {
                     src="https://github.com/avyuktsoni0731/fluxfeed/raw/main/assets/fluxfeed_landing.png"
                     width={600}
                   />
-                  <div className="flex flex-col gap-2">
+                  <div className="flex text-semiWhite flex-col gap-2">
                     <Reveal>
                       <h3 className="text-2xl md:text-3xl font-semibold">
                         FluxFeed

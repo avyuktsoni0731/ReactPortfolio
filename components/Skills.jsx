@@ -19,7 +19,7 @@ export default function Skills() {
                 Coding Superpowers Unlocked{" "}
                 <span className="text-webGreen fadeAnimate">!</span>
               </h2>
-              <p className="max-w-[700px] font-Mono text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[700px] text-semiWhite font-Mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Check out my technical skills and expertise.
               </p>
             </Reveal>
