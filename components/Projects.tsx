@@ -42,7 +42,7 @@ export function Projects() {
               My Projects <span className="text-webGreen fadeAnimate">.</span>
             </h2>
           </Reveal>
-          <Carousel className="w-full max-w-6xl pt-8 font-mono">
+          <Carousel className="w-full max-w-6xl pt-8 font-Mono">
             <CarouselContent>
               <CarouselItem>
                 <div className="grid gap-4 md:grid-cols-2 lg:gap-6">

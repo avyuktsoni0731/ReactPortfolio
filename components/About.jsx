@@ -22,7 +22,7 @@ const About = () => {
           </Reveal>
           <div className="flex flex-col md:flex-row justify-center items-center space-x-4">
             <Reveal>
-              <div className="text-base font-mono space-y-6">
+              <div className="text-base font-Mono space-y-6">
                 <p>
                   Hey there! My name is{" "}
                   <span className="text-webGreen">Avyukt</span> , and I{" "}

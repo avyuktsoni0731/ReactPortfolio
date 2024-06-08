@@ -19,7 +19,7 @@ export default function Skills() {
                 Coding Superpowers Unlocked{" "}
                 <span className="text-webGreen fadeAnimate">!</span>
               </h2>
-              <p className="max-w-[700px] font-mono text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[700px] font-Mono text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Check out my technical skills and expertise.
               </p>
             </Reveal>
@@ -36,7 +36,7 @@ export default function Skills() {
                 </div>
               </Reveal>
 
-              <div className="font-mono text-md flex flex-col justify-center gap-2">
+              <div className="font-Mono text-md flex flex-col justify-center gap-2">
                 <Reveal>
                   <p className="text-[#ccd6f6]">
                     <span className="text-webGreen">&gt;</span> Python
@@ -83,7 +83,7 @@ export default function Skills() {
                   </h3>
                 </div>
               </Reveal>
-              <div className="font-mono text-md flex flex-col justify-center gap-2">
+              <div className="font-Mono text-md flex flex-col justify-center gap-2">
                 <Reveal>
                   <p className="text-[#ccd6f6]">
                     <span className="text-webGreen">&gt;</span> Flask
@@ -139,7 +139,7 @@ export default function Skills() {
                   <h3 className="font-Montserrat text-lg font-bold">Tools</h3>
                 </div>
               </Reveal>
-              <div className="font-mono text-md flex flex-col justify-center gap-2">
+              <div className="font-Mono text-md flex flex-col justify-center gap-2">
                 <Reveal>
                   <p className="text-[#ccd6f6]">
                     <span className="text-webGreen">&gt;</span> VS Code

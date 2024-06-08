@@ -1,6 +1,7 @@
 /* App.css */
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
 
 * {
   scroll-behavior: smooth;
@@ -8,6 +9,12 @@
 
 .font-Montserrat {
   font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.font-Mono {
+  font-family: "Roboto Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
 }

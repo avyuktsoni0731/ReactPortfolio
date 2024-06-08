@@ -34,7 +34,7 @@ export function Experiences() {
               </h2>
             </Reveal>
             <Reveal>
-              <p className="max-w-[900px] text-webGrey font-mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+              <p className="max-w-[900px] text-webGrey font-Mono md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
                 Check out my work history and the communities I&apos;ve been a
                 part of
                 <span className="text-webGreen">!</span>
@@ -59,7 +59,7 @@ export function Experiences() {
               </h3>
             </Reveal>
             <Reveal>
-              <p className="text-gray-500 dark:text-gray-400 font-mono">
+              <p className="text-gray-500 dark:text-gray-400 font-Mono">
                 AMURoboclub
               </p>
             </Reveal>
@@ -84,12 +84,12 @@ export function Experiences() {
               </h3>
             </Reveal>
             <Reveal>
-              <p className="text-gray-500 dark:text-gray-400 font-mono">
+              <p className="text-gray-500 dark:text-gray-400 font-Mono">
                 Google Developer Student Clubs ZHCET
               </p>
             </Reveal>
             <Reveal>
-              <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 font-mono">
+              <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 font-Mono">
                 Contributed to the development of frontend of the TPO Website of
                 our college, using the MERN Stack.
               </p>

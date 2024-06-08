@@ -58,7 +58,7 @@ export function Connect() {
               <span className="sr-only">GitHub</span>
             </Link>
           </div>
-          <div className="space-y-2 font-mono">
+          <div className="space-y-2 font-Mono">
             <p className="text-gray-500 dark:text-gray-400">
               I&apos;d <span className="text-webRed">love</span> to hear from
               you<span className="text-webGreen">!</span> Feel free to reach out

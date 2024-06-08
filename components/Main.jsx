@@ -22,7 +22,7 @@ const App = () => {
       <div className="h-[20vh] font-Montserrat animate-in">
         <Reveal>
           <div className="py-2">
-            <p className="text-lg font-mono text-webGreen">Hi, my name is</p>
+            <p className="text-lg font-Mono text-webGreen">Hi, my name is</p>
           </div>
         </Reveal>
         <Reveal>
@@ -32,7 +32,7 @@ const App = () => {
           </h1>
         </Reveal>
         <Reveal>
-          <p className="text-lg font-mono text-webGrey mt-4 mb-8 text-white/70 w-[300px] lg:w-[500px]">
+          <p className="text-lg font-Mono text-webGrey mt-4 mb-8 text-white/70 w-[300px] lg:w-[500px]">
             I am a <span className="typed-text">{text}</span>
             <span className={`blink ${isTyping ? "typing" : ""}`}>|</span>
           </p>

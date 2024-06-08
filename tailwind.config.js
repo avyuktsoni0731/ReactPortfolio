@@ -13,6 +13,7 @@ module.exports = {
     extend: {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
+        Mono: ["Roboto Mono", "sans-serif"],
       },
     },
     colors: {
