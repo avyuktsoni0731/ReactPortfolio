@@ -20,6 +20,7 @@ module.exports = {
       webGreen: "#64ffda",
       webRed: "#ff2e63",
       webGrey: "#a8b2d1",
+      semiWhite: "#a8aebb",
     },
   },
   plugins: [daisyui],
