@@ -11,7 +11,7 @@ const About = () => {
         id="about"
         className="flex flex-col md:items-start md:justify-normal items-center justify-center h-auto"
       >
-        <div className="px-16 xl:px-80 space-y-4 items-center">
+        <div className="px-16 xl:px-80 items-center">
           <Reveal>
             <h1
               id="about"
@@ -22,14 +22,21 @@ const About = () => {
           </Reveal>
           <div className="flex text-semiWhite flex-col md:flex-row justify-center items-center space-x-4">
             <Reveal>
-              <div className="text-base font-Mono space-y-6">
+              <div className="text-base font-Mono space-y-6 pt-8">
                 <p>
                   Hey there! My name is{" "}
-                  <span className="text-webGreen">Avyukt</span> , and I{" "}
-                  <span className="text-webRed">love</span> creating things that
-                  live on the internet. My interest in technology started back
-                  in my school life, when I was in my 5th grade. I used to mod
-                  Grand Theft Auto using{" "}
+                  <span className="text-webGreen">Avyukt</span>, and I{" "}
+                  <span className="text-webRed">
+                    <u
+                      className="no-underline tooltip tooltip-error"
+                      data-tip="❤️"
+                    >
+                      love
+                    </u>
+                  </span>{" "}
+                  creating things that live on the internet. My interest in
+                  technology started back in my school life, when I was in my
+                  5th grade. I used to mod Grand Theft Auto using{" "}
                   <span className="text-[#d2b94b] hover:text-[#e8e8e8] transition duration-200">
                     <a href="https://openiv.com/">OpenIV</a>
                   </span>{" "}
@@ -58,7 +65,15 @@ const About = () => {
                   building accessable and inclusive things that make a
                   differnce. I&apos;ve been so much into talking to new people,
                   making new friends, and building an inclusive community around
-                  me. This is what I <span className="text-webRed">love</span>{" "}
+                  me. This is what I{" "}
+                  <span className="text-webRed">
+                    <u
+                      className="no-underline tooltip tooltip-error"
+                      data-tip="❤️"
+                    >
+                      love
+                    </u>
+                  </span>{" "}
                   doing.
                 </p>
               </div>
