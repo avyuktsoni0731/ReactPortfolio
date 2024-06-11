@@ -30,7 +30,8 @@ export function Experiences() {
           <div className="space-y-2 flex flex-col justify-center items-center">
             <Reveal>
               <h2 className="font-Montserrat text-[#ccd6f6] text-3xl font-bold tracking-tighter sm:text-5xl">
-                Experience<span className="text-webGreen fadeAnimate">.</span>
+                Experience
+                <span className="text-webGreen fadeAnimate px-1">.</span>
               </h2>
             </Reveal>
             <Reveal>
@@ -43,7 +44,7 @@ export function Experiences() {
           </div>
         </div>
 
-        <div className="mx-auto font-Montserrat flex flex-col gap-6 py-12 sm:flex-col md:flex-row lg:flex-row">
+        <div className="mx-auto font-Montserrat flex flex-col gap-6 py-12 px-4 md:px-32 sm:flex-col md:flex-row lg:flex-row">
           <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
             <div className="mb-4 flex items-center justify-between">
               <Reveal>
@@ -51,7 +52,11 @@ export function Experiences() {
                   May 2024 - Present
                 </div>
               </Reveal>
-              <BriefcaseIcon />
+              <span>
+                <a href="https://amuroboclub.tech/" target="_blank">
+                  <BriefcaseIcon />
+                </a>
+              </span>
             </div>
             <Reveal>
               <h3 className="text-xl font-bold text-[#ccd6f6]">
@@ -76,7 +81,14 @@ export function Experiences() {
                   Oct 2023 - Present
                 </div>
               </Reveal>
-              <BriefcaseIcon />
+              <span>
+                <a
+                  href="https://gdsc.community.dev/zakir-husain-college-of-engineering-and-technology-aligarh-india/"
+                  target="_blank"
+                >
+                  <BriefcaseIcon />
+                </a>
+              </span>
             </div>
             <Reveal>
               <h3 className="text-xl font-bold text-[#ccd6f6]">
