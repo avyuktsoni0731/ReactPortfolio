@@ -28,7 +28,7 @@ const App = () => {
         <Reveal>
           <h1 className="text-4xl md:text-7xl font-bold text-[#ccd6f6]">
             Avyukt Soni
-            <span className="text-webRed fadeAnimate"> _</span>
+            <span className="text-webRed fadeAnimate">_</span>
           </h1>
         </Reveal>
         <Reveal>

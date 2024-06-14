@@ -14,7 +14,7 @@ export default function Home() {
   return (
     <>
       <main className="overflow-x-hidden">
-        <CursorGlow />
+        {/* <CursorGlow /> */}
         <ScrollProgressBar />
         <Navbar />
         <Main />

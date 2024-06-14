@@ -31,7 +31,7 @@ export function Experiences() {
             <Reveal>
               <h2 className="font-Montserrat text-[#ccd6f6] text-3xl font-bold tracking-tighter sm:text-5xl">
                 Experience
-                <span className="text-webGreen fadeAnimate px-1">.</span>
+                <span className="text-webGreen fadeAnimate mx-1">.</span>
               </h2>
             </Reveal>
             <Reveal>

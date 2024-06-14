@@ -15,9 +15,9 @@ const About = () => {
           <Reveal>
             <h1
               id="about"
-              className="text-2xl md:text-4xl font-bold text-[#ccd6f6]"
+              className="text-2xl font-Montserrat md:text-5xl font-bold text-[#ccd6f6]"
             >
-              About Me<span className="text-webGreen fadeAnimate">.</span>
+              About Me<span className="text-webGreen fadeAnimate mx-1">.</span>
             </h1>
           </Reveal>
           <div className="flex text-semiWhite flex-col md:flex-row justify-center items-center space-x-4">

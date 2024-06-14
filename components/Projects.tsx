@@ -38,8 +38,9 @@ export function Projects() {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center gap-4 md:gap-6 lg:gap-8">
           <Reveal>
-            <h2 className="font-Montserrat text-[#ccd6f6] text-2xl font-bold tracking-tighter sm:text-3xl md:text-4xl">
-              My Projects <span className="text-webGreen fadeAnimate">.</span>
+            <h2 className="font-Montserrat text-[#ccd6f6] text-2xl font-bold tracking-tighter sm:text-3xl md:text-5xl">
+              My Projects
+              <span className="text-webGreen fadeAnimate mx-1">.</span>
             </h2>
           </Reveal>
           <Carousel className="w-full max-w-6xl pt-8 font-Mono">
@@ -65,16 +66,18 @@ export function Projects() {
                         according to age, gender, allergies and health problems.
                       </p>
                     </Reveal>
-                    <div className="mt-auto">
+                    <div>
                       <Reveal>
-                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                        <h3 className="text-md font-semibold">Tech Stack:</h3>
                       </Reveal>
                       <Reveal>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-gray-500 text-sm dark:text-gray-400">
                           Flask, React.js, Next.js, MongoDB, Gemini API, Google
                           Maps API, Google OAuth 2.0
                         </p>
                       </Reveal>
+                    </div>
+                    <div className="mt-auto">
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/vitalWebApp"
@@ -110,16 +113,18 @@ export function Projects() {
                         on cloud platforms.
                       </p>
                     </Reveal>
-                    <div className="mt-auto">
+                    <div>
                       <Reveal>
-                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                        <h3 className="text-md font-semibold">Tech Stack:</h3>
                       </Reveal>
                       <Reveal>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-gray-500 text-sm dark:text-gray-400">
                           Flask, React.js, Google OAuth 2.0, Google Drive v3
                           API, Cryptography Fernet
                         </p>
                       </Reveal>
+                    </div>
+                    <div className="mt-auto">
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/CryptoDrive"
@@ -158,15 +163,17 @@ export function Projects() {
                         and confidentiality.
                       </p>
                     </Reveal>
-                    <div className="mt-auto">
+                    <div>
                       <Reveal>
-                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                        <h3 className="text-md font-semibold">Tech Stack:</h3>
                       </Reveal>
                       <Reveal>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-gray-500 text-sm dark:text-gray-400">
                           Python, MongoDB, SHA256{"(PKDF2_HMAC)"}
                         </p>
                       </Reveal>
+                    </div>
+                    <div className="mt-auto">
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/python-mongo-authentication"
@@ -204,15 +211,17 @@ export function Projects() {
                         by the user.
                       </p>
                     </Reveal>
-                    <div className="mt-auto">
+                    <div>
                       <Reveal>
-                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                        <h3 className="text-md font-semibold">Tech Stack:</h3>
                       </Reveal>
                       <Reveal>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-gray-500 text-sm dark:text-gray-400">
                           Python, Flask, Firebase, Numpy, Pandas
                         </p>
                       </Reveal>
+                    </div>
+                    <div className="mt-auto">
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/efficalc"
@@ -249,15 +258,17 @@ export function Projects() {
                         website gets updated.
                       </p>
                     </Reveal>
-                    <div className="mt-auto">
+                    <div>
                       <Reveal>
-                        <h3 className="text-xl font-semibold">Tech Stack:</h3>
+                        <h3 className="text-md font-semibold">Tech Stack:</h3>
                       </Reveal>
                       <Reveal>
-                        <p className="text-gray-500 dark:text-gray-400">
+                        <p className="text-gray-500 text-sm dark:text-gray-400">
                           Python, Flask, Beautiful Soup {"(Web Scraping)"}
                         </p>
                       </Reveal>
+                    </div>
+                    <div className="mt-auto">
                       <Link
                         className="inline-flex items-center gap-2 rounded-md bg-gray-900 px-4 py-2 text-xs font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                         href="https://github.com/avyuktsoni0731/vitalWebApp"
