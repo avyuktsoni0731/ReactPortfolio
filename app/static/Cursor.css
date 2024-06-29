@@ -1,0 +1,27 @@
+.cursor-svg {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  animation: rotation 4.5s infinite linear;
+  pointer-events: none;
+  transition: top 0.3s, left 0.3s;
+  transition-timing-function: ease-out;
+  z-index: 10000;
+}
+
+.cursor-text {
+  font-size: 4em;
+  font-family: "Poppins";
+  font-weight: bold;
+  fill: rgb(33, 202, 232);
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 * {
-  background-color: #212120;
+  cursor: url("../public/custom-cursor.png"), auto;
 }

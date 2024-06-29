@@ -72,7 +72,7 @@
 }
 
 /* Cursor */
-.cursor-glow {
+/* .cursor-glow {
   position: fixed;
   width: 700px;
   height: 700px;
@@ -91,7 +91,7 @@
     rgba(31, 30, 38, 0.2),
     rgba(33, 33, 33, 0)
   );
-}
+} */
 
 /* Progress Bar */
 .scroll-progress-bar {
