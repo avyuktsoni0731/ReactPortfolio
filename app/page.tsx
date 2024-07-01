@@ -1,4 +1,5 @@
 import Main from "../components/Main";
+import { Landing } from "@/components/landing";
 import About from "../components/About";
 import Navbar from "../components/Navbar";
 import { Projects } from "@/components/Projects";
@@ -13,11 +14,11 @@ import "./static/App.css";
 export default function Home() {
   return (
     <>
-      <main className="overflow-x-hidden [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
+      <main className="overflow-x-hidden [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px]">
         <CircularCursor />
         <ScrollProgressBar />
         <Navbar />
-        <Main />
+        <Landing />
         <About />
         <Experiences />
         <Skills />

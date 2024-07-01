@@ -1,27 +1,55 @@
-.cursor-svg {
-  width: 100px;
-  height: 100px;
+.cursor,
+.cursor-follower {
   position: absolute;
-  transform: translate(-50%, -50%);
-  animation: rotation 4.5s infinite linear;
+  top: 0;
+  left: 0;
   pointer-events: none;
-  transition: top 0.3s, left 0.3s;
-  transition-timing-function: ease-out;
-  z-index: 10000;
 }
 
-.cursor-text {
-  font-size: 4em;
-  font-family: "Poppins";
-  font-weight: bold;
-  fill: rgb(33, 202, 232);
+.cursor {
+  width: 10px;
+  height: 10px;
+  background-color: #e0615d;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: transform 0.05s ease-out;
 }
 
-@keyframes rotation {
-  from {
-    transform: rotate(0deg);
+.cursor-follower {
+  width: 60px;
+  height: 60px;
+  background-color: #e0615d;
+  opacity: 20%;
+  border-radius: 50%;
+  z-index: 999;
+  transition: transform 0.3s ease-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .cursor,
+  .cursor-follower {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
   }
-  to {
-    transform: rotate(359deg);
+
+  .cursor {
+    width: 10px;
+    height: 10px;
+    background-color: #e0615d;
+    border-radius: 50%;
+    z-index: 1000;
+    transition: transform 0.05s ease-out;
+  }
+
+  .cursor-follower {
+    width: 60px;
+    height: 60px;
+    background-color: #e0615d;
+    opacity: 20%;
+    border-radius: 50%;
+    z-index: 999;
   }
 }

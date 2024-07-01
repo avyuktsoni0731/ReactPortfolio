@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 * {
-  cursor: url("../public/custom-cursor.png"), auto;
+  cursor: none;
 }

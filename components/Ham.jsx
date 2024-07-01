@@ -60,7 +60,7 @@ const Ham = () => {
               exit="exit"
               className="fixed left-0 w-full origin-top h-screen text-black"
             >
-              <div className="flex pb-32 h-full flex-col">
+              <div className="flex pb-32 h-full flex-col [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
                 <motion.div
                   variants={containerVars}
                   initial="initial"

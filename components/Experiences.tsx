@@ -24,8 +24,35 @@ export function Experiences() {
             </Reveal>
           </div>
         </div>
-
         <div className="mx-auto font-Montserrat flex flex-col gap-6 py-12 px-4 md:px-32 sm:flex-col md:flex-row lg:flex-row">
+          <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
+            <div className="mb-4 flex items-center justify-between">
+              <Reveal>
+                <div className="inline-block rounded-lg bg-gray-100 py-1 text-sm dark:bg-gray-800">
+                  July 2024 - Present
+                </div>
+              </Reveal>
+              <span>
+                <a href="https://amuroboclub.tech/" target="_blank">
+                  <BriefcaseIcon />
+                </a>
+              </span>
+            </div>
+            <Reveal>
+              <h3 className="text-xl font-bold text-[#ccd6f6]">Web Master</h3>
+            </Reveal>
+            <Reveal>
+              <p className="text-gray-500 dark:text-gray-400 font-Mono">
+                IEEE Computer Society - ZHCET, AMU
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+                description about my work in IEEECS
+              </p>
+            </Reveal>
+          </div>
+
           <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
             <div className="mb-4 flex items-center justify-between">
               <Reveal>
@@ -52,6 +79,39 @@ export function Experiences() {
             <Reveal>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
                 description about my work in roboclub
+              </p>
+            </Reveal>
+          </div>
+          <div className="flex-grow w-full flex flex-col rounded-lg border border-gray-200 bg-white p-6 shadow-sm transition-all hover:border-gray-300 dark:border-gray-800 dark:bg-gray-950 dark:hover:border-gray-700 dark:border-gray-800">
+            <div className="mb-4 flex items-center justify-between">
+              <Reveal>
+                <div className="inline-block rounded-lg bg-gray-100 py-1 text-sm dark:bg-gray-800">
+                  Oct 2023 - Present
+                </div>
+              </Reveal>
+              <span>
+                <a
+                  href="https://gdsc.community.dev/zakir-husain-college-of-engineering-and-technology-aligarh-india/"
+                  target="_blank"
+                >
+                  <BriefcaseIcon />
+                </a>
+              </span>
+            </div>
+            <Reveal>
+              <h3 className="text-xl font-bold text-[#ccd6f6]">
+                Core Team Member {"(Web & Tech Team)"}
+              </h3>
+            </Reveal>
+            <Reveal>
+              <p className="text-gray-500 dark:text-gray-400 font-Mono">
+                Google Developer Student Clubs ZHCET
+              </p>
+            </Reveal>
+            <Reveal>
+              <p className="mt-4 text-sm text-gray-500 dark:text-gray-400 font-Mono">
+                Contributed to the development of frontend of the TPO Website of
+                our college, using the MERN Stack.
               </p>
             </Reveal>
           </div>
