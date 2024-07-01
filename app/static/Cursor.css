@@ -22,7 +22,7 @@
   opacity: 20%;
   border-radius: 50%;
   z-index: 999;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 @media only screen and (max-width: 1024px) {
