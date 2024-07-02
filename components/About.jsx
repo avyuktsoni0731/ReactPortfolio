@@ -80,7 +80,7 @@ const About = () => {
             </Reveal>
             <Reveal>
               <Image
-                src="/profilePic.JPG"
+                src="/aboutProfilePic.jpg"
                 alt="profile-picture"
                 width={350}
                 height={350}

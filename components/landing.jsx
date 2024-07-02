@@ -9,6 +9,7 @@ import Image from "next/image";
 import Reveal from "./Reveal";
 import { useTypewriter } from "react-simple-typewriter";
 import React, { useState } from "react";
+import ImageHoverEffect from "./ImageHover";
 
 /** Add fonts into your Next.js project:
 
@@ -62,13 +63,14 @@ export function Landing() {
             <div className="relative">
               <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-primary opacity-20 blur-3xl" />
               <div className="absolute -bottom-6 -left-6 h-32 w-32 rounded-full bg-secondary opacity-20 blur-3xl" />
-              <Image
+              <ImageHoverEffect src="/profilePic.JPG" alt="profile-pic" />
+              {/* <Image
                 src="/profilePic.JPG"
                 width={350}
                 height={350}
                 alt="Avyukt Soni"
                 className="mx-auto aspect-square overflow-hidden rounded-lg object-cover sm:w-full grayscale hover:grayscale-0 transition duration-300"
-              />
+              /> */}
             </div>
           </Reveal>
         </div>
