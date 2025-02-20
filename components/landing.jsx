@@ -63,7 +63,7 @@ export function Landing() {
             <div className="relative">
               <div className="absolute -top-6 -right-6 h-32 w-32 rounded-full bg-primary opacity-20 blur-3xl" />
               <div className="absolute -bottom-6 -left-6 h-32 w-32 rounded-full bg-secondary opacity-20 blur-3xl" />
-              <ImageHoverEffect src="/profilePic.JPG" alt="profile-pic" />
+              <ImageHoverEffect src="/IMG_6136.jpeg" alt="profile-pic" />
               {/* <Image
                 src="/profilePic.JPG"
                 width={350}

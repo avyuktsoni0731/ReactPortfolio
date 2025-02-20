@@ -61,7 +61,7 @@ const Navbar = () => {
           </li>
           <li>
             <a
-              href="https://www.linkedin.com/in/avyukt-soni-082447281/"
+              href="https://www.linkedin.com/in/avyuktsoni0731"
               target="_blank"
               rel="noreferrer" // Added for accessibility
             >

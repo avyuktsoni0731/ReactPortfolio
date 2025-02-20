@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./Reveal";
 
 export function Experiences() {
@@ -29,26 +30,38 @@ export function Experiences() {
             <div className="mb-4 flex items-center justify-between">
               <Reveal>
                 <div className="inline-block rounded-lg bg-gray-100 py-1 text-sm dark:bg-gray-800">
-                  July 2024 - Present
+                  Nov 2024 - Present
                 </div>
               </Reveal>
               <span>
-                <a href="https://amuroboclub.tech/" target="_blank">
-                  <BriefcaseIcon />
+                <a
+                  href="https://gdg.community.dev/gdg-on-campus-zakir-husain-college-of-engineering-and-technology-aligarh-india/"
+                  target="_blank"
+                >
+                  <Image
+                    src={"/gdgcLogo.png"}
+                    alt="gdgc-logo"
+                    width={30}
+                    height={30}
+                  ></Image>
                 </a>
               </span>
             </div>
             <Reveal>
-              <h3 className="text-xl font-bold text-[#ccd6f6]">Web Master</h3>
+              <h3 className="text-xl font-bold text-[#ccd6f6]">
+                Web & Tech Lead
+              </h3>
             </Reveal>
             <Reveal>
               <p className="text-gray-500 dark:text-gray-400 font-Mono">
-                IEEE Computer Society - ZHCET, AMU
+                Google Developer Groups on Campus, ZHCET
               </p>
             </Reveal>
             <Reveal>
               <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                description about my work in IEEECS
+                Leading the technical team to build projects together, helping
+                everyone work on their skills while promoting a collaborative
+                and supportive culture at the same time.
               </p>
             </Reveal>
           </div>

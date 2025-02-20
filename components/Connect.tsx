@@ -34,7 +34,7 @@ export function Connect() {
           <div className="flex justify-center items-center space-x-6">
             <Link
               className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="https://www.linkedin.com/in/avyukt-soni-082447281/"
+              href="https://www.linkedin.com/in/avyuktsoni0731"
               target="_blank"
             >
               <LinkedinIcon />
@@ -70,7 +70,7 @@ export function Connect() {
                 className="text-[#d2b94b] hover:underline dark:text-gray-50"
                 href="mailto:ceo@avyuktsoni.co"
               >
-                ceo@avyuktsoni.co
+                soniavyukt@gmail.com
               </a>
             </p>
           </div>

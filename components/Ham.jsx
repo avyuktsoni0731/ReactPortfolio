@@ -102,7 +102,7 @@ const Ham = () => {
                     </p>
                     <p className="">
                       <a
-                        href="https://www.linkedin.com/in/avyukt-soni-082447281/"
+                        href="https://www.linkedin.com/in/avyuktsoni0731"
                         className="flex flex-row items-center"
                       >
                         <span className="iconify opacity-50 hover:opacity-90 transition duration-200">

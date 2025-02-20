@@ -72,7 +72,7 @@ const TiltCard = () => {
         className="absolute place-content-center"
       >
         <Image
-          src="/profilePic.JPG"
+          src="/IMG_6136.jpg"
           alt="Profile Picture"
           width={550}
           height={550}

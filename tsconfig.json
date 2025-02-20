@@ -27,7 +27,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "components/ui/heart.jsx",
-    "components/landing.jsx"
+    "components/landing.jsx",
+    "components/ExperienceTimeline.jsx"
   ],
   "exclude": ["node_modules"]
 }
