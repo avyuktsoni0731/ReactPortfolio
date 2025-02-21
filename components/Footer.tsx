@@ -10,11 +10,12 @@ export function Footer() {
           <Link className="flex items-center space-x-2" href="#">
             <Image src="/Globe.png" alt="Favicon" width={40} height={40} />
             <span className="text-lg font-bold text-gray-200">
-              Avyukt&apos;s Portfolio
+              <span className="text-webGreen">A</span>vyukt&apos;s Portfolio
+              <span className="fadeAnimate text-webGreen">_</span>
             </span>
           </Link>
           <p className="text-sm whitespace-nowrap">
-            © 2024 Avyukt Soni. All rights reserved.
+            © 2025 Avyukt Soni. All rights reserved.
           </p>
         </div>
 

@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 import ScrollProgressBar from "../components/ProgressBar";
 import CircularCursor from "../components/CursorGlow";
 import "./static/App.css";
-import { Contributions } from "@/components/Communities";
+import { Contributions } from "@/components/Contributions";
 
 export default function Home() {
   return (
@@ -24,7 +24,7 @@ export default function Home() {
         <Experiences />
         <Skills />
         <Projects />
-        {/* <Contributions /> */}
+        <Contributions />
         <Connect />
         <Footer />
       </main>
