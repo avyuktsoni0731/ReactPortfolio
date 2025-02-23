@@ -28,6 +28,28 @@ interface Contribution {
 
 const contributions: Contribution[] = [
   {
+    title: "Organising Team Member",
+    organization: "AMURoboclub - Vercera 4.0",
+    date: "February 2025",
+    description:
+      "Organized Treasure Hunt, Software Hackathon, and Coding Contest at Vercera 4.0. Developed the event dashboard with Next.js & PocketBase, handling payments, registrations, and team management. Also contributed to sponsorships and event coverage.",
+    images: [
+      "/IMG_6136.jpg",
+      "/aboutPic.jpg",
+      "/Vercera4.0/treasureHuntClue.JPG",
+      "/Vercera4.0/chess.jpg",
+      "/Vercera4.0/waterBottle.jpg",
+      "/Vercera4.0/BGMI.jpg",
+      "/Vercera4.0/tekken8.JPG",
+      "/Vercera4.0/lineFollower.jpg",
+      "/Vercera4.0/treasureHunt.jpg",
+      "/Vercera4.0/halfTeamPic.jpg",
+      "/Vercera4.0/treasureHuntTeamPic.jpg",
+    ],
+    linkedInUrl:
+      "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+  },
+  {
     title: "Technical Organising Team Member",
     organization: "AUV ZHCET - AMUROVc3.0",
     date: "November 2024",
@@ -127,7 +149,7 @@ export function Contributions() {
           <div className="grid gap-6 mt-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {contributions.map((contribution, index) => (
               <Reveal key={index}>
-                <Card className="w-full max-w-md mx-auto bg-white dark:bg-gray-900 overflow-hidden flex flex-col h-[500px]">
+                <Card className="w-full max-w-md mx-auto bg-white dark:bg-gray-900 overflow-hidden flex flex-col h-[550px]">
                   <CardContent className="p-0 flex flex-col flex-grow">
                     <Carousel className="w-full relative">
                       <CarouselContent>
@@ -165,7 +187,7 @@ export function Contributions() {
                         <CalendarIcon className="w-4 h-4 mr-2" />
                         <span className="text-sm">{contribution.date}</span>
                       </div>
-                      <p className="text-semiWhite font-Mono text-sm mb-4 line-clamp-3">
+                      <p className="text-semiWhite font-Mono text-sm mb-4 line-clamp-6 flex-grow">
                         {contribution.description}
                       </p>
                       <div className="mt-auto flex-shrink-0">
