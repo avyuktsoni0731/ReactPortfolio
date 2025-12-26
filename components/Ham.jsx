@@ -1,175 +1,49 @@
 "use client";
-import Link from "next/link";
-import { Icon } from "@iconify/react";
-import { React, useState, useRef } from "react";
-import { useClickAway } from "react-use";
-import { motion, AnimatePresence } from "framer-motion";
-import Hamburger from "hamburger-react";
+import StaggeredMenu from "./StaggeredMenu";
 
-const navLinks = [
-  { title: "Home", href: "#main" },
-  { title: "About Me", href: "#about" },
-  { title: "Skills", href: "#skills" },
-  { title: "Projects", href: "#projects" },
-  { title: "Experiences", href: "#experiences" },
-  { title: "Contact Me", href: "#connect" },
+const menuItems = [
+  { label: "Home", ariaLabel: "Go to home section", link: "#main" },
+  { label: "About", ariaLabel: "Learn about me", link: "#about" },
+  { label: "Skills", ariaLabel: "View my skills", link: "#skills" },
+  { label: "Projects", ariaLabel: "See my projects", link: "#projects" },
   {
-    title: "Resume / CV",
-    href: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
-    target: "_blank",
+    label: "Experience",
+    ariaLabel: "View my experiences",
+    link: "#experiences",
+  },
+  { label: "Contact", ariaLabel: "Get in touch", link: "#connect" },
+  {
+    label: "Resume",
+    ariaLabel: "View my resume",
+    link: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
   },
 ];
 
+const socialItems = [
+  { label: "GitHub", link: "https://github.com/avyuktsoni0731" },
+  { label: "LinkedIn", link: "https://www.linkedin.com/in/avyuktsoni0731" },
+];
+
 const Ham = () => {
-  const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
-
-  useClickAway(ref, () => setOpen(false));
-
-  const menuVars = {
-    initial: {
-      scaleY: 0,
-    },
-    animate: {
-      scaleY: 1,
-      transition: {
-        duration: 0.5,
-        ease: [0.12, 0, 0.39, 0],
-      },
-    },
-    exit: {
-      scaleY: 0,
-      transition: {
-        delay: 0.5,
-        duration: 0.5,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
-  };
-
   return (
-    <>
-      <div ref={ref} className="lg:hidden inline-block">
-        <Hamburger toggled={isOpen} toggle={setOpen} />
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div
-              variants={menuVars}
-              initial="initial"
-              animate="animate"
-              exit="exit"
-              className="fixed left-0 w-full origin-top h-screen text-black"
-            >
-              <div className="flex pb-32 h-full flex-col [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px]">
-                <motion.div
-                  variants={containerVars}
-                  initial="initial"
-                  animate="open"
-                  exit="initial"
-                  className="flex flex-col h-full items-center justify-center font-Montserrat font-semibold space-y-4
-          "
-                >
-                  {navLinks.map((link, index) => {
-                    return (
-                      <>
-                        <div className="overflow-hidden">
-                          <MobileNavLink
-                            key={index}
-                            title={link.title}
-                            href={link.href}
-                          />
-                        </div>
-                      </>
-                    );
-                  })}
-                  <div className="flex flex-row space-x-4 pt-16">
-                    <p className="">
-                      <a
-                        href="https://github.com/avyuktsoni0731"
-                        className="flex flex-row items-center"
-                      >
-                        <span className="iconify opacity-50 hover:opacity-90 transition duration-200">
-                          <Icon
-                            className="mx-3 opacity-30 hover:opacity-70 transition duration-200"
-                            icon="akar-icons:github-fill"
-                            width="30"
-                            height="30"
-                            style={{ color: "#fff" }}
-                          />
-                        </span>
-                        Github{" "}
-                      </a>
-                    </p>
-                    <p className="">
-                      <a
-                        href="https://www.linkedin.com/in/avyuktsoni0731"
-                        className="flex flex-row items-center"
-                      >
-                        <span className="iconify opacity-50 hover:opacity-90 transition duration-200">
-                          <Icon
-                            className="mx-3 opacity-30 hover:opacity-70 transition duration-200"
-                            icon="akar-icons:linkedin-box-fill"
-                            width="30"
-                            height="30"
-                            style={{ color: "#fff" }}
-                          />
-                        </span>
-                        LinkedIn
-                      </a>
-                    </p>
-                  </div>
-                </motion.div>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </div>
-    </>
+    <div className="lg:hidden">
+      <StaggeredMenu
+        position="right"
+        items={menuItems}
+        socialItems={socialItems}
+        displaySocials={true}
+        displayItemNumbering={true}
+        menuButtonColor="#fff"
+        openMenuButtonColor="#111"
+        changeMenuColorOnOpen={true}
+        colors={["#0a192f", "#5227ff"]}
+        logoUrl="/Globe.png"
+        accentColor="#5227ff"
+        isFixed={true}
+        closeOnClickAway={true}
+      />
+    </div>
   );
 };
 
 export default Ham;
-
-const containerVars = {
-  initial: {
-    transition: {
-      staggerChildren: 0.09,
-      staggerDirection: -1,
-    },
-  },
-  open: {
-    transition: {
-      delayChildren: 0.3,
-      staggerChildren: 0.09,
-      staggerDirection: 1,
-    },
-  },
-};
-
-const mobileLinkVars = {
-  initial: {
-    y: "30vh",
-    transition: {
-      duration: 0.5,
-      ease: [0.37, 0, 0.63, 1],
-    },
-  },
-  open: {
-    y: 0,
-    transition: {
-      duration: 0.7,
-      ease: [0, 0.55, 0.45, 1],
-    },
-  },
-};
-
-const MobileNavLink = ({ title, href }) => {
-  return (
-    <motion.div
-      variants={mobileLinkVars}
-      className="text-5xl uppercase text-black"
-    >
-      <Link href={href}>{title}</Link>
-    </motion.div>
-  );
-};

@@ -11,23 +11,26 @@ import ScrollProgressBar from "../components/ProgressBar";
 import CircularCursor from "../components/CursorGlow";
 import "./static/App.css";
 import { Contributions } from "@/components/Contributions";
+import ClickSpark from "@/components/ClickSpark";
 
 export default function Home() {
   return (
     <>
-      <main className="overflow-x-hidden [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px]">
-        <CircularCursor />
-        <ScrollProgressBar />
-        <Navbar />
-        <Landing />
-        <About />
-        <Experiences />
-        <Skills />
-        <Projects />
-        <Contributions />
-        <Connect />
-        <Footer />
-      </main>
+      <ClickSpark>
+        <main className="overflow-x-hidden [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px]">
+          <CircularCursor />
+          <ScrollProgressBar />
+          <Navbar />
+          <Landing />
+          <About />
+          <Experiences />
+          <Skills />
+          <Projects />
+          <Contributions />
+          <Connect />
+          <Footer />
+        </main>
+      </ClickSpark>
     </>
   );
 }
