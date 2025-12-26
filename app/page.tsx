@@ -1,4 +1,3 @@
-// import Main from "../components/Main";
 import { Landing } from "@/components/landing";
 import About from "../components/About";
 import Navbar from "../components/Navbar";
