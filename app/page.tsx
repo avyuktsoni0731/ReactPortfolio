@@ -11,12 +11,14 @@ import CircularCursor from "../components/CursorGlow";
 import "./static/App.css";
 import { Contributions } from "@/components/Contributions";
 import ClickSpark from "@/components/ClickSpark";
+import InteractiveBackground from "@/components/InteractiveBackground";
 
 export default function Home() {
   return (
     <>
+      <InteractiveBackground />
       <ClickSpark>
-        <main className="overflow-x-hidden [bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:30px_30px]">
+        <main className="overflow-x-hidden min-h-screen relative z-10">
           <CircularCursor />
           <ScrollProgressBar />
           <Navbar />
