@@ -211,7 +211,8 @@ export function ResumeAdmin() {
         <ul className="text-sm text-[#8892b0] space-y-1">
           <li>• Your resume is stored securely in Firebase Storage</li>
           <li>
-            • Clicking any "Resume" button opens the PDF in a modal overlay
+            • Clicking any &quot;Resume&quot; button opens the PDF in a modal
+            overlay
           </li>
           <li>
             • Visitors can view, download, or open the resume in a new tab
