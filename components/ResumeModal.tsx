@@ -21,10 +21,31 @@ export function ResumeModal() {
     if (isModalOpen) {
       document.addEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "hidden";
+
+      // Restore cursor visibility on modal (override global cursor: none)
+      const style = document.createElement("style");
+      style.id = "resume-modal-cursor-fix";
+      style.textContent = `
+        .resume-modal-container,
+        .resume-modal-container * {
+          cursor: auto !important;
+        }
+        .resume-modal-container button,
+        .resume-modal-container a {
+          cursor: pointer !important;
+        }
+      `;
+      document.head.appendChild(style);
     }
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
       document.body.style.overflow = "unset";
+
+      // Remove cursor fix style
+      const existingStyle = document.getElementById("resume-modal-cursor-fix");
+      if (existingStyle) {
+        existingStyle.remove();
+      }
     };
   }, [isModalOpen, handleKeyDown]);
 
@@ -49,10 +70,10 @@ export function ResumeModal() {
   };
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center">
+    <div className="resume-modal-container fixed inset-0 z-[100] flex items-center justify-center">
       {/* Backdrop */}
       <div
-        className="absolute inset-0 bg-black/80 backdrop-blur-sm"
+        className="absolute inset-0 bg-black/80 backdrop-blur-sm cursor-pointer"
         onClick={closeResumeModal}
       />
 
