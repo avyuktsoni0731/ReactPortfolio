@@ -1,11 +1,69 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/ryErlNM9PKD
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
+"use client";
+import { useState, useEffect } from "react";
 import Reveal from "./Reveal";
+import { getSkills } from "@/lib/firebase";
+
+// Fallback data when Firebase is not configured
+const fallbackSkills = {
+  Languages: [
+    "Python",
+    "C",
+    "C++",
+    "JavaScript",
+    "TypeScript",
+    "HTML5",
+    "CSS3",
+  ],
+  Frameworks: [
+    "Flask",
+    "React.js",
+    "MongoDB",
+    "Node.js",
+    "Tailwind CSS",
+    "Next.js",
+    "Selenium Webdriver",
+    "Pandas",
+    "Matplotlib",
+  ],
+  Tools: [
+    "VS Code",
+    "Git",
+    "MS Office",
+    "Ubuntu (Linux)",
+    "DigitalOcean",
+    "Render",
+    "Vercel",
+  ],
+};
 
 export default function Skills() {
+  const [skillsByCategory, setSkillsByCategory] = useState(fallbackSkills);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchSkills() {
+      try {
+        const data = await getSkills();
+        if (data && data.length > 0) {
+          // Group skills by category
+          const grouped = data.reduce((acc, skill) => {
+            if (!acc[skill.category]) {
+              acc[skill.category] = [];
+            }
+            acc[skill.category].push(skill.name);
+            return acc;
+          }, {});
+          setSkillsByCategory(grouped);
+        }
+      } catch (error) {
+        console.log("Using fallback skills data");
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchSkills();
+  }, []);
+
   return (
     <section
       id="skills"
@@ -24,160 +82,103 @@ export default function Skills() {
               </p>
             </Reveal>
           </div>
-          {/* <div className="grid w-full max-w-5xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3"> */}
           <div className="flex flex-col items-center md:flex-row md:items-start justify-between w-full max-w-5xl gap-6">
-            <div className="flex flex-col items-start justify-center space-y-4">
-              <Reveal>
-                <div className="flex items-center space-x-2">
-                  <CodeIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webGreen" />
-                  <h3 className="font-Montserrat text-lg font-bold">
-                    Languages
-                  </h3>
+            {skillsByCategory.Languages &&
+              skillsByCategory.Languages.length > 0 && (
+                <div className="flex flex-col items-start justify-center space-y-4">
+                  <Reveal>
+                    <div className="flex items-center space-x-2">
+                      <CodeIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webGreen" />
+                      <h3 className="font-Montserrat text-lg font-bold">
+                        Languages
+                      </h3>
+                    </div>
+                  </Reveal>
+                  <div className="font-Mono text-md flex flex-col justify-center gap-2">
+                    {skillsByCategory.Languages.map((skill, index) => (
+                      <Reveal key={index}>
+                        <p className="text-[#ccd6f6]">
+                          <span className="text-webGreen">&gt;</span> {skill}
+                        </p>
+                      </Reveal>
+                    ))}
+                  </div>
                 </div>
-              </Reveal>
+              )}
 
-              <div className="font-Mono text-md flex flex-col justify-center gap-2">
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Python
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> C
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> C++
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> JavaScript
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> TypeScript
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> HTML5
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> CSS3
-                  </p>
-                </Reveal>
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-center space-y-4">
-              <Reveal>
-                <div className="flex items-center space-x-2">
-                  <PuzzleIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webRed" />
-                  <h3 className="font-Montserrat text-lg font-bold">
-                    Frameworks
-                  </h3>
+            {skillsByCategory.Frameworks &&
+              skillsByCategory.Frameworks.length > 0 && (
+                <div className="flex flex-col items-start justify-center space-y-4">
+                  <Reveal>
+                    <div className="flex items-center space-x-2">
+                      <PuzzleIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-webRed" />
+                      <h3 className="font-Montserrat text-lg font-bold">
+                        Frameworks
+                      </h3>
+                    </div>
+                  </Reveal>
+                  <div className="font-Mono text-md flex flex-col justify-center gap-2">
+                    {skillsByCategory.Frameworks.map((skill, index) => (
+                      <Reveal key={index}>
+                        <p className="text-[#ccd6f6]">
+                          <span className="text-webGreen">&gt;</span> {skill}
+                        </p>
+                      </Reveal>
+                    ))}
+                  </div>
                 </div>
-              </Reveal>
-              <div className="font-Mono text-md flex flex-col justify-center gap-2">
+              )}
+
+            {skillsByCategory.Tools && skillsByCategory.Tools.length > 0 && (
+              <div className="flex flex-col items-start justify-center space-y-4">
                 <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Flask
-                  </p>
+                  <div className="flex items-center space-x-2">
+                    <WrenchIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#d2b94b]" />
+                    <h3 className="font-Montserrat text-lg font-bold">Tools</h3>
+                  </div>
                 </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> React.js
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> MongoDB
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Node.js
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Tailwind CSS
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Next.js
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Selenium
-                    Webdriver
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Pandas
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Matplotlib
-                  </p>
-                </Reveal>
-              </div>
-            </div>
-            <div className="flex flex-col items-start justify-center space-y-4">
-              <Reveal>
-                <div className="flex items-center space-x-2">
-                  <WrenchIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#d2b94b]" />
-                  <h3 className="font-Montserrat text-lg font-bold">Tools</h3>
+                <div className="font-Mono text-md flex flex-col justify-center gap-2">
+                  {skillsByCategory.Tools.map((skill, index) => (
+                    <Reveal key={index}>
+                      <p className="text-[#ccd6f6]">
+                        <span className="text-webGreen">&gt;</span> {skill}
+                      </p>
+                    </Reveal>
+                  ))}
                 </div>
-              </Reveal>
-              <div className="font-Mono text-md flex flex-col justify-center gap-2">
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> VS Code
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Git
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> MS Office
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Ubuntu{" "}
-                    {"(Linux)"}
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> DigitalOcean
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Render
-                  </p>
-                </Reveal>
-                <Reveal>
-                  <p className="text-[#ccd6f6]">
-                    <span className="text-webGreen">&gt;</span> Vercel
-                  </p>
-                </Reveal>
               </div>
-            </div>
+            )}
+
+            {/* Render additional categories dynamically */}
+            {Object.entries(skillsByCategory)
+              .filter(
+                ([category]) =>
+                  !["Languages", "Frameworks", "Tools"].includes(category)
+              )
+              .map(([category, skills]) => (
+                <div
+                  key={category}
+                  className="flex flex-col items-start justify-center space-y-4"
+                >
+                  <Reveal>
+                    <div className="flex items-center space-x-2">
+                      <DatabaseIcon className="h-6 w-6 text-gray-500 dark:text-gray-400 text-[#64ffda]" />
+                      <h3 className="font-Montserrat text-lg font-bold">
+                        {category}
+                      </h3>
+                    </div>
+                  </Reveal>
+                  <div className="font-Mono text-md flex flex-col justify-center gap-2">
+                    {skills.map((skill, index) => (
+                      <Reveal key={index}>
+                        <p className="text-[#ccd6f6]">
+                          <span className="text-webGreen">&gt;</span> {skill}
+                        </p>
+                      </Reveal>
+                    ))}
+                  </div>
+                </div>
+              ))}
           </div>
         </div>
       </div>
@@ -239,6 +240,27 @@ function WrenchIcon(props) {
       strokeLinejoin="round"
     >
       <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+    </svg>
+  );
+}
+
+function DatabaseIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <ellipse cx="12" cy="5" rx="9" ry="3" />
+      <path d="M3 5V19A9 3 0 0 0 21 19V5" />
+      <path d="M3 12A9 3 0 0 0 21 12" />
     </svg>
   );
 }

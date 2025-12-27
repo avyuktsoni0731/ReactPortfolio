@@ -1,30 +1,33 @@
 "use client";
 import StaggeredMenu from "./StaggeredMenu";
-
-const menuItems = [
-  { label: "Home", ariaLabel: "Go to home section", link: "#main" },
-  { label: "About", ariaLabel: "Learn about me", link: "#about" },
-  { label: "Skills", ariaLabel: "View my skills", link: "#skills" },
-  { label: "Projects", ariaLabel: "See my projects", link: "#projects" },
-  {
-    label: "Experience",
-    ariaLabel: "View my experiences",
-    link: "#experiences",
-  },
-  { label: "Contact", ariaLabel: "Get in touch", link: "#connect" },
-  {
-    label: "Resume",
-    ariaLabel: "View my resume",
-    link: "https://drive.google.com/file/d/1gnF1YRNGqTjYibXuN2ZDj2zIN7qHD5y1/view?usp=sharing",
-  },
-];
-
-const socialItems = [
-  { label: "GitHub", link: "https://github.com/avyuktsoni0731" },
-  { label: "LinkedIn", link: "https://www.linkedin.com/in/avyuktsoni0731" },
-];
+import { useResume } from "./ResumeContext";
 
 const Ham = () => {
+  const { openResumeModal } = useResume();
+
+  const menuItems = [
+    { label: "Home", ariaLabel: "Go to home section", link: "#main" },
+    { label: "About", ariaLabel: "Learn about me", link: "#about" },
+    { label: "Skills", ariaLabel: "View my skills", link: "#skills" },
+    { label: "Projects", ariaLabel: "See my projects", link: "#projects" },
+    {
+      label: "Experience",
+      ariaLabel: "View my experiences",
+      link: "#experiences",
+    },
+    { label: "Contact", ariaLabel: "Get in touch", link: "#connect" },
+    {
+      label: "Resume",
+      ariaLabel: "View my resume",
+      onClick: openResumeModal,
+    },
+  ];
+
+  const socialItems = [
+    { label: "GitHub", link: "https://github.com/avyuktsoni0731" },
+    { label: "LinkedIn", link: "https://www.linkedin.com/in/avyuktsoni0731" },
+  ];
+
   return (
     <div className="lg:hidden">
       <StaggeredMenu

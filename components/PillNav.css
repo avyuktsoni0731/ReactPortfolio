@@ -158,6 +158,38 @@
   margin-left: 8px;
 }
 
+.pill-resume-btn {
+  height: var(--nav-h);
+  padding: 0 16px;
+  border-radius: 9999px;
+  background: rgba(10, 25, 47, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(100, 255, 218, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #64ffda;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.pill-resume-btn:hover {
+  background: #64ffda;
+  color: #0a192f;
+  border-color: #64ffda;
+}
+
+.pill-resume-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
 .pill-social-btn {
   width: var(--nav-h);
   height: var(--nav-h);

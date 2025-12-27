@@ -476,12 +476,22 @@ export const StaggeredMenu = ({
                 <li className="sm-panel-itemWrap" key={it.label + idx}>
                   <a
                     className="sm-panel-item"
-                    href={it.link}
+                    href={it.onClick ? "#" : it.link}
                     aria-label={it.ariaLabel}
                     data-index={idx + 1}
                     onClick={(e) => {
                       // Close the menu first
                       closeMenu();
+
+                      // If item has custom onClick handler, use it
+                      if (it.onClick) {
+                        e.preventDefault();
+                        setTimeout(() => {
+                          it.onClick();
+                        }, 350); // Wait for menu close animation
+                        return;
+                      }
+
                       // Handle anchor links manually for smooth scrolling
                       if (it.link.startsWith("#")) {
                         e.preventDefault();

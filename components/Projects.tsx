@@ -2,9 +2,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import Reveal from "./Reveal";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { getProjects, Project } from "@/lib/firebase";
 
-const projects = [
+// Fallback data when Firebase is not configured
+const fallbackProjects: Project[] = [
   {
     title: "EttyDB",
     description:
@@ -12,6 +14,7 @@ const projects = [
     techStack: ["MongoDB", "Telegram API", "Crypto.js", "JavaScript"],
     image: "/projects/ettyDB.png",
     link: "https://github.com/stktyagi/EttyDB",
+    order: 0,
   },
   {
     title: "TCP Client-Server Socket",
@@ -20,6 +23,7 @@ const projects = [
     techStack: ["C", "TCP/IP", "Socket Programming", "Multithreading"],
     image: "/projects/socketProgramming.png",
     link: "https://github.com/avyuktsoni0731/socket-programming-c",
+    order: 1,
   },
   {
     title: "Vital",
@@ -28,6 +32,7 @@ const projects = [
     techStack: ["Flask", "React.js", "Next.js", "MongoDB", "Gemini API"],
     image: "/projects/vital.png",
     link: "https://github.com/avyuktsoni0731/vitalWebApp",
+    order: 2,
   },
   {
     title: "CryptoDrive",
@@ -37,6 +42,7 @@ const projects = [
     image:
       "https://github.com/avyuktsoni0731/CryptoDrive/blob/main/images/Encrypted.png?raw=true",
     link: "https://github.com/avyuktsoni0731/CryptoDrive",
+    order: 3,
   },
   {
     title: "PyMongoAuth",
@@ -46,6 +52,7 @@ const projects = [
     image:
       "https://github.com/avyuktsoni0731/python-mongo-authentication/blob/main/static/mongoDB.png?raw=true",
     link: "https://github.com/avyuktsoni0731/python-mongo-authentication",
+    order: 4,
   },
   {
     title: "PowerOptima",
@@ -55,6 +62,7 @@ const projects = [
     image: "https://github.com/avyuktsoni0731/efficalc/raw/main/images/1.png",
     link: "https://github.com/avyuktsoni0731/efficalc",
     badge: "Google Solution Challenge",
+    order: 5,
   },
   {
     title: "FluxFeed",
@@ -64,11 +72,30 @@ const projects = [
     image:
       "https://github.com/avyuktsoni0731/fluxfeed/raw/main/assets/fluxfeed_landing.png",
     link: "https://github.com/avyuktsoni0731/fluxfeed",
+    order: 6,
   },
 ];
 
 export function Projects() {
+  const [projects, setProjects] = useState<Project[]>(fallbackProjects);
   const [activeIndex, setActiveIndex] = useState(0);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchProjects() {
+      try {
+        const data = await getProjects();
+        if (data && data.length > 0) {
+          setProjects(data);
+        }
+      } catch (error) {
+        console.log("Using fallback projects data");
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchProjects();
+  }, []);
 
   const nextProject = () => {
     setActiveIndex((prev) => (prev + 1) % projects.length);
@@ -155,7 +182,6 @@ export function Projects() {
             <div className="grid md:grid-cols-5 gap-6 md:gap-8 items-start">
               {/* Image Card */}
               <div className="md:col-span-3 group">
-                {/* <Reveal> */}
                 <div className="relative aspect-video rounded-xl overflow-hidden bg-[#112240] border border-[#233554] hover:border-[#64ffda]/30 transition-all duration-500">
                   <Image
                     src={project.image}
@@ -166,7 +192,6 @@ export function Projects() {
                   {/* Subtle overlay on hover */}
                   <div className="absolute inset-0 bg-[#64ffda]/0 group-hover:bg-[#64ffda]/5 transition-colors duration-500" />
                 </div>
-                {/* </Reveal> */}
               </div>
 
               {/* Content Card */}

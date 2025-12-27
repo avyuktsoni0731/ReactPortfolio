@@ -2,6 +2,7 @@
 import { React } from "react";
 import Ham from "./Ham";
 import PillNav from "./PillNav";
+import { useResume } from "./ResumeContext";
 
 const navItems = [
   { label: "Home", href: "#main" },
@@ -34,6 +35,8 @@ const socialLinks = [
 ];
 
 const Navbar = () => {
+  const { openResumeModal } = useResume();
+
   return (
     <>
       {/* Desktop Navigation - PillNav */}
@@ -49,6 +52,7 @@ const Navbar = () => {
           hoveredPillTextColor="#0a192f"
           pillTextColor="#ccd6f6"
           socialLinks={socialLinks}
+          onResumeClick={openResumeModal}
         />
       </div>
 

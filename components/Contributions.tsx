@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Reveal from "./Reveal";
@@ -16,17 +18,10 @@ import {
   ChevronLeft,
   ChevronRight,
 } from "lucide-react";
+import { getContributions, Contribution } from "@/lib/firebase";
 
-interface Contribution {
-  title: string;
-  organization: string;
-  date: string;
-  description: string;
-  images: string[];
-  linkedInUrl: string;
-}
-
-const contributions: Contribution[] = [
+// Fallback data when Firebase is not configured
+const fallbackContributions: Contribution[] = [
   {
     title: "Organising Team Member",
     organization: "AMURoboclub - Vercera 4.0",
@@ -48,6 +43,7 @@ const contributions: Contribution[] = [
     ],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 0,
   },
   {
     title: "Technical Organising Team Member",
@@ -65,6 +61,7 @@ const contributions: Contribution[] = [
     ],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 1,
   },
   {
     title: "Event Coordinator",
@@ -81,6 +78,7 @@ const contributions: Contribution[] = [
     ],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 2,
   },
   {
     title: "Speaker",
@@ -98,6 +96,7 @@ const contributions: Contribution[] = [
     ],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 3,
   },
   {
     title: "Organizer",
@@ -113,6 +112,7 @@ const contributions: Contribution[] = [
     ],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 4,
   },
   {
     title: "Speaker",
@@ -123,10 +123,32 @@ const contributions: Contribution[] = [
     images: ["/LaTeXEssentials/latexSS.png"],
     linkedInUrl:
       "https://www.linkedin.com/in/avyuktsoni0731/details/volunteering-experiences/",
+    order: 5,
   },
 ];
 
 export function Contributions() {
+  const [contributions, setContributions] = useState<Contribution[]>(
+    fallbackContributions
+  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchContributions() {
+      try {
+        const data = await getContributions();
+        if (data && data.length > 0) {
+          setContributions(data);
+        }
+      } catch (error) {
+        console.log("Using fallback contributions data");
+      } finally {
+        setLoading(false);
+      }
+    }
+    fetchContributions();
+  }, []);
+
   return (
     <section
       id="contributions"
@@ -148,7 +170,7 @@ export function Contributions() {
           </Reveal>
           <div className="grid gap-6 mt-8 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3">
             {contributions.map((contribution, index) => (
-              <Reveal key={index}>
+              <Reveal key={contribution.id || index}>
                 <Card className="w-full max-w-md mx-auto bg-white dark:bg-gray-900 overflow-hidden flex flex-col h-[550px]">
                   <CardContent className="p-0 flex flex-col flex-grow">
                     <Carousel className="w-full relative">

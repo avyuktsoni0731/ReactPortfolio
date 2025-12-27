@@ -17,6 +17,7 @@ const PillNav = ({
   onMobileMenuClick,
   initialLoadAnimation = true,
   socialLinks = [],
+  onResumeClick,
 }) => {
   const resolvedPillTextColor = pillTextColor ?? baseColor;
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -278,22 +279,43 @@ const PillNav = ({
           </ul>
         </div>
 
-        {socialLinks.length > 0 && (
-          <div className="pill-social-links desktop-only space-x-2">
-            {socialLinks.map((social, i) => (
-              <a
-                key={social.href || `social-${i}`}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="pill-social-btn"
-                aria-label={social.label}
+        <div className="pill-social-links desktop-only space-x-2">
+          {onResumeClick && (
+            <button
+              onClick={onResumeClick}
+              className="pill-resume-btn"
+              aria-label="View Resume"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        )}
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+                <polyline points="10 9 9 9 8 9" />
+              </svg>
+              <span>Resume</span>
+            </button>
+          )}
+          {socialLinks.map((social, i) => (
+            <a
+              key={social.href || `social-${i}`}
+              href={social.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pill-social-btn"
+              aria-label={social.label}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
 
         <button
           className="mobile-menu-button mobile-only"
